@@ -1,0 +1,57 @@
+{
+  "///": {
+    "prefix": [ "bc", "///" ],
+    "body": [
+      "/**",
+      " * ${0}",
+      " */"
+    ],
+    "description": "Block Comments\n"
+  },
+  "@access": {
+    "prefix": "doc.access",
+    "body": [
+      "/**",
+      " * @access ${1:public|protected|package|private}",
+      " */"
+    ],
+    "description": "@access, For Common\n"
+  },
+  "@deprecated": {
+    "prefix": "doc.deprecated",
+    "body": [
+      "/**",
+      " * @deprecated ${1:description}",
+      " */"
+    ],
+    "description": "@deprecated, For Common\n"
+  },
+  "@experimental": {
+    "prefix": "doc.experimental",
+    "body": [
+      "/**",
+      " * @experimental ${1:description}",
+      " */"
+    ],
+    "description": "@experimental, For Common\n"
+  },
+  "@example": {
+    "prefix": "doc.example",
+    "body": [
+      "/**",
+      " * @example",
+      " * ${1}",
+      " */"
+    ],
+    "description": "@example, For Common\n"
+  },
+  "@ignore": {
+    "prefix": "doc.ignore",
+    "body": [
+      "/**",
+      " * @ignore",
+      " */"
+    ],
+    "description": "@ignore, For Common\n"
+  }
+}
