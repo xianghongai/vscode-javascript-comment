@@ -24,6 +24,23 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
 - `@throws`
 - `@typedef`
 
+## Type Syntax
+
+| type               | syntax                                                                     |
+|--------------------|----------------------------------------------------------------------------|
+| Simple             | `@param {string} param - description`                                      |
+| Array              | `@param {string[]} param - description`                                    |
+| Nullable           | `@param {?Object} param - description`                                     |
+| Not Nullable       | `@param {!Object} param - description`                                     |
+| Union              | `@param {number|string} param - description`                               |
+| Nullable and Union | `@param {?(number|string)} param - description`                            |
+| Spread             | `@param {...number} param - description`                                   |
+| Optional           | `@param {number} [param] - description`                                    |
+| Default            | `@param {number} [param=10] - description`                                 |
+| Function           | `@param {function(foo: number, bar: string): boolean} param - description` |
+| Generics           | `@param {Map<number, string>} param - description`                         |
+| Record             | `@param {{foo: ?number, bar: string}} param - description`                 |
+
 ## For Member And Variable
 
 `doc.type`

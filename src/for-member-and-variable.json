@@ -2,7 +2,7 @@
   "@type": {
     "prefix": "doc.type",
     "body": [
-      "/** @type {${1:type}} - ${2:description}*/"
+      "/** @type {${1:type}} - ${2:description} */"
     ],
     "description": "@type, For Member And Variable\n"
   },
