@@ -1,45 +1,27 @@
 {
-  "@class": {
-    "prefix": "doc.class",
-    "body": [
-      "/**",
-      " * @class",
-      " * ${2:description}.",
-      " */"
-    ],
-    "description": "@class, For Class\n"
-  },
-  "@extends": {
-    "prefix": "doc.extends",
-    "body": [
-      "/**",
-      " * @extends {${1:SuperClass}}",
-      " */"
-    ],
-    "description": "@extends, For Class\n"
-  },
-  "@interface": {
-    "prefix": "doc.interface",
-    "body": [
-      "/**",
-      " * @interface",
-      " */"
-    ],
-    "description": "@interface, For Class\n"
-  },
-  "@implements": {
-    "prefix": "doc.implements",
-    "body": [
-      "/**",
-      " * @implements {${1:MyInterface}}",
-      " */"
-    ],
-    "description": "@implements, For Class\n"
-  },
-  "@constructor": {
-    "prefix": "doc.constructor",
-    "body": "/** @constructor */",
-    "description": "@constructor, For Class/Function\n"
-  }
-
+	"@class": {
+		"prefix": ["doc.class", "@class"],
+		"body": ["/**", " * @class", " * ${2:description}.", " */"],
+		"description": "@class, For Class\n"
+	},
+	"@extends": {
+		"prefix": ["doc.extends", "@extends"],
+		"body": ["/**", " * @extends {${1:SuperClass}}", " */"],
+		"description": "@extends, For Class\n"
+	},
+	"@interface": {
+		"prefix": ["doc.interface", "@interface"],
+		"body": ["/**", " * @interface", " */"],
+		"description": "@interface, For Class\n"
+	},
+	"@implements": {
+		"prefix": ["doc.implements", "@implements"],
+		"body": ["/**", " * @implements {${1:MyInterface}}", " */"],
+		"description": "@implements, For Class\n"
+	},
+	"@constructor": {
+		"prefix": ["doc.constructor", "@constructor"],
+		"body": "/** @constructor */",
+		"description": "@constructor, For Class/Function\n"
+	}
 }

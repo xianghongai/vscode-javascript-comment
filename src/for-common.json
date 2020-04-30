@@ -1,57 +1,63 @@
 {
-  "///": {
-    "prefix": [ "bc", "///" ],
-    "body": [
-      "/**",
-      " * ${0}",
-      " */"
-    ],
-    "description": "Block Comments\n"
-  },
-  "@access": {
-    "prefix": "doc.access",
-    "body": [
-      "/**",
-      " * @access ${1:public|protected|package|private}",
-      " */"
-    ],
-    "description": "@access, For Common\n"
-  },
-  "@deprecated": {
-    "prefix": "doc.deprecated",
-    "body": [
-      "/**",
-      " * @deprecated ${1:description}",
-      " */"
-    ],
-    "description": "@deprecated, For Common\n"
-  },
-  "@experimental": {
-    "prefix": "doc.experimental",
-    "body": [
-      "/**",
-      " * @experimental ${1:description}",
-      " */"
-    ],
-    "description": "@experimental, For Common\n"
-  },
-  "@example": {
-    "prefix": "doc.example",
-    "body": [
-      "/**",
-      " * @example",
-      " * ${1}",
-      " */"
-    ],
-    "description": "@example, For Common\n"
-  },
-  "@ignore": {
-    "prefix": "doc.ignore",
-    "body": [
-      "/**",
-      " * @ignore",
-      " */"
-    ],
-    "description": "@ignore, For Common\n"
-  }
+	"///": {
+		"prefix": ["bc", "///"],
+		"body": ["/**", " * ${0}", " */"],
+		"description": "Block Comments\n"
+	},
+	"@access": {
+		"prefix": ["doc.access", "@access"],
+		"body": ["/**", " * @access ${1:public|protected|package|private}", " */"],
+		"description": "@access, For Common\n"
+	},
+	"@deprecated": {
+		"prefix": ["doc.deprecated", "@deprecated"],
+		"body": ["/**", " * @deprecated ${1:description}", " */"],
+		"description": "@deprecated, For Common\n"
+	},
+	"@experimental": {
+		"prefix": ["doc.experimental", "@experimental"],
+		"body": ["/**", " * @experimental ${1:description}", " */"],
+		"description": "@experimental, For Common\n"
+	},
+	"@example": {
+		"prefix": ["doc.example", "@example"],
+		"body": [
+			"/**",
+			" * @example",
+			" *",
+			" * ```${1:js}",
+			" * ${0}",
+			" * ```",
+			" */"
+		],
+		"description": "@example, For Common\n"
+	},
+	"@example (inner)": {
+		"prefix": ["doc.example.inner", "@example.inner"],
+		"body": ["@example", "*", "* ```${1:js}", "* ${0}", "* ```"],
+		"description": "@example, For Common\n"
+	},
+	"@ignore": {
+		"prefix": ["doc.ignore", "@ignore"],
+		"body": ["/**", " * @ignore", " */"],
+		"description": "@ignore, For Common\n"
+	},
+	"@note": {
+		"prefix": ["doc.note", "@note"],
+		"body": ["/**", " * DESIGN NOTES", " *", " */"],
+		"description": "DESIGN NOTES\n"
+	},
+	"@license": {
+		"prefix": ["doc.license", "@license"],
+		"body": [
+			"/**",
+			" * @license",
+			" * Copyright ${1:NAME}. All Rights Reserved.",
+			" *",
+			" * Use of this source code is governed by an MIT-style license that can be",
+			" * found in the LICENSE file in the root directory of this source tree.",
+			" */"
+		],
+		"description": "@license\n"
+	}
 }

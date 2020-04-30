@@ -1,19 +1,17 @@
 {
-  "@type": {
-    "prefix": "doc.type",
-    "body": [
-      "/** @type {${1:type}} - ${2:description} */"
-    ],
-    "description": "@type, For Member And Variable\n"
-  },
-  "@type is Object": {
-    "prefix": "doc.type.object",
-    "body": [
-      "/**",
-      " * @type {Object} ${1:obj}",
-      " * @property {${2:type}} ${1:obj}.${3:property} - ${4:description}",
-      " */"
-    ],
-    "description": "@type is Object, For Member And Variable\n"
-  }
+	"@type": {
+		"prefix": ["doc.type", "@type"],
+		"body": ["/** @type {${1:type}} - ${2:description} */"],
+		"description": "@type, For Member And Variable\n"
+	},
+	"@type is Object": {
+		"prefix": ["doc.type.object", "@type.object"],
+		"body": [
+			"/**",
+			" * @type {Object} ${1:obj}",
+			" * @property {${2:type}} ${1:obj}.${3:property} - ${4:description}",
+			" */"
+		],
+		"description": "@type is Object, For Member And Variable\n"
+	}
 }

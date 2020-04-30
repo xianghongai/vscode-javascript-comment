@@ -21,8 +21,11 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
 - `@interface`
 - `@listens`
 - `@override`
+- `@return`
 - `@throws`
 - `@typedef`
+- `@return`
+- `@note`
 
 ## Type Syntax
 
@@ -41,15 +44,17 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
 | Generics           | `@param {Map<number, string>} param - description`                         |
 | Record             | `@param {{foo: ?number, bar: string}} param - description`                 |
 
-## For Member And Variable
+## Snippets
 
-`doc.type`
+### For Member And Variable
+
+`doc.type` or `@type`
 
 ```javascript
 /** @type {type} - description*/
 ```
 
-`doc.type.object`
+`doc.type.object` or `@type.object`
 
 ```javascript
 /**
@@ -58,10 +63,21 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
  */
 ```
 
+### For Method And Function
 
-## For Method And Function
+`doc.reutrn` or `@reutrn`
 
-`doc.param`
+```javascript
+@return {type} - description
+```
+
+`doc.requires` or `@requires`
+
+```javascript
+@requires {module} - description
+```
+
+`doc.param` or `@param`
 
 ```javascript
 /**
@@ -69,13 +85,13 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
  */
 ```
 
-`param`, or `doc.param.single`
+`doc.param.inner` or `@param.inner`
 
 ```javascript
 @param {type} property - description.
 ```
 
-`doc.param.object`
+`doc.param.object` or `@param.object`
 
 ```javascript
 /**
@@ -84,15 +100,14 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
  */
 ```
 
-`param.object`, or `doc.param.object.single`
+`doc.param.object.inner` or `@param.object.inner`
 
 ```javascript
 @param {Object} param - description.
 * @param {type} param.property - property description.
 ```
 
-
-`doc.abstract`
+`doc.abstract` or `@abstract`
 
 ```javascript
 /**
@@ -101,7 +116,7 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
  */
 ```
 
-`doc.override`
+`doc.override` or `@override`
 
 ```javascript
 /**
@@ -109,7 +124,7 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
  */
 ```
 
-`doc.emits`
+`doc.emits` or `@emits`
 
 ```javascript
 /**
@@ -117,7 +132,7 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
  */
 ```
 
-`doc.listens`
+`doc.listens` or `@listens`
 
 ```javascript
 /**
@@ -125,7 +140,7 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
  */
 ```
 
-`doc.throws`
+`doc.throws` or `@throws`
 
 ```javascript
 /**
@@ -133,9 +148,9 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
  */
 ```
 
-## For Class
+### For Class
 
-`doc.class `
+`doc.class ` or `@class `
 
 ```javascript
 /**
@@ -144,7 +159,7 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
  */
 ```
 
-`doc.extends`
+`doc.extends` or `@extends`
 
 ```javascript
 /**
@@ -152,7 +167,7 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
  */
 ```
 
-`doc.interface`
+`doc.interface` or `@interface`
 
 ```javascript
 /**
@@ -160,7 +175,7 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
  */
 ```
 
-`doc.implements`
+`doc.implements` or `@implements`
 
 ```javascript
 /**
@@ -168,13 +183,13 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
  */
 ```
 
-`doc.constructor`
+`doc.constructor` or `@constructor`
 
 ```javascript
 /** @constructor */
 ```
 
-## For Common
+### For Common
 
 `bc` or `///`, **B**lock **C**omments
 
@@ -184,7 +199,7 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
  */
 ```
 
-`doc.access`
+`doc.access` or `@access`
 
 ```javascript
 /**
@@ -192,7 +207,7 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
  */
 ```
 
-`doc.deprecated`
+`doc.deprecated` or `@deprecated`
 
 ```javascript
 /**
@@ -200,7 +215,7 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
  */
 ```
 
-`doc.experimental`
+`doc.experimental` or `@experimental`
 
 ```javascript
 /**
@@ -208,7 +223,7 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
  */
 ```
 
-`doc.example`
+`doc.example` or `@example`
 
 ```javascript
 /**
@@ -217,7 +232,7 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
  */
 ```
 
-`doc.ignore`
+`doc.ignore` or `@ignore`
 
 ```javascript
 /**
@@ -225,10 +240,21 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
  */
 ```
 
+`doc.license` or `@license`
 
-## For Virtual
+```javascript
+/**
+ * @license
+ * Copyright NAME. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file in the root directory of this source tree.
+ */
+```
 
-`doc.external`
+### For Virtual
+
+`doc.external` or `@external`
 
 ```javascript
 /**
@@ -236,7 +262,7 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
  */
 ```
 
-`doc.typedef`
+`doc.typedef` or `@typedef`
 
 ```javascript
 /**
@@ -244,7 +270,7 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
  */
 ```
 
-`doc.typedef.object`
+`doc.typedef.object` or `@typedef.object`
 
 ```javascript
 /**
