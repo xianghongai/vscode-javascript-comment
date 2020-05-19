@@ -2,7 +2,7 @@
 
 Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
 
-![JavaScript Comment Snippet](https://raw.githubusercontent.com/caringrun/assets/master/vscode-javascript-comment.gif)
+![JavaScript Comment Snippet](https://user-images.githubusercontent.com/58411528/82288531-41d84e00-99d5-11ea-829c-cd6a70b2cc0e.gif)
 
 - `@param`
 - `@type`
