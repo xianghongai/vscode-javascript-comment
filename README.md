@@ -85,7 +85,7 @@ Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
 
 ### For Method And Function
 
-`doc.reutrn` or `@reutrn`
+`doc.return` or `@return`
 
 ```javascript
 @return {type} - description
