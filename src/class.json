@@ -1,0 +1,38 @@
+{
+	"@class": {
+		"prefix": ["@class"],
+		"body": ["/**", " * @class", " * ${2:description}.", " */"],
+		"description": "@class, For Class\n"
+	},
+	"@extends": {
+		"prefix": ["@class.extends", "@extends"],
+		"body": ["@extends {${1:SuperClass}}"],
+		"description": "syntax: @extends <identifier>"
+	},
+	"@interface": {
+		"prefix": ["@class.interface", "@interface"],
+		"body": [
+			"/**",
+			" * $1",
+			" *",
+			" * @interface",
+			" */"
+		],
+		"description": "syntax: @interface\nhttps://jsdoc.app/tags-interface.html"
+	},
+	"@implements": {
+		"prefix": ["@class.implements", "@implements"],
+		"body": ["@implements {${1:Interface}}"],
+		"description": "syntax: @implements <identifier>\nhttps://jsdoc.app/tags-implements.html"
+	},
+	"@constructor": {
+		"prefix": ["@class.constructor", "@constructor"],
+		"body": "/** @constructor */",
+		"description": "@constructor"
+	},
+	"@namespace": {
+		"prefix": ["@namespace"],
+		"body": "/** @namespace */",
+		"description": "@namespace"
+	}
+}

@@ -1,0 +1,87 @@
+{
+	"///": {
+		"prefix": ["bc", "///"],
+		"body": ["/**", " * ${0:description}", " */"],
+		"description": "Block Comments\n"
+	},
+	"@access": {
+		"prefix": ["@access"],
+		"body": ["@access ${1:public|protected|package|private}"],
+		"description": "syntax: `@access <public|protected|package|private>`\nAlias are @public, @protected, @package and @private."
+	},
+	"@deprecated": {
+		"prefix": ["@deprecated"],
+		"body": ["@deprecated ${1:description}"],
+		"description": "syntax: `@deprecated [description]`"
+	},
+	"@desc": {
+		"prefix": ["@desc"],
+		"body": ["@desc ${1:description}"],
+		"description": "syntax: `@desc <description>`\n<description> supports markdown.\nNormally you don't need to use @desc, because first section in doc comment is determined automatically as @desc."
+	},
+	"@example": {
+		"prefix": ["@example"],
+		"body": [
+			"@example",
+			"*",
+			"* ```${1:js}",
+			"* ${2}",
+			"* ```",
+			"* $0"
+		],
+		"description": "syntax: `@example <JavaScript>`\nAnd you can use <caption>...</caption> at first line."
+	},
+	"@experimental": {
+		"prefix": ["@experimental"],
+		"body": ["@experimental ${1:this ${2:class} includes breaking change.}"],
+		"description": "syntax: `@experimental [description]`"
+	},
+	"@ignore": {
+		"prefix": ["@ignore"],
+		"body": ["@ignore"],
+		"description": "syntax: `@ignore`\nThe identifier is not displayed in document."
+	},
+	"@link": {
+		"prefix": ["@link"],
+		"body": ["{@link ${1:<identifier>}}"],
+		"description": "syntax: `{@link <identifier>}`\nlink other identifier\n"
+	},
+	"@see": {
+		"prefix": ["@see"],
+		"body": ["@see ${1:<URL>}"],
+		"description": "syntax: `@see <URL>`"
+	},
+	"@note": {
+		"prefix": ["@note"],
+		"body": ["DESIGN NOTES", "* $1"],
+		"description": "DESIGN NOTES\n"
+	},
+	"@since": {
+		"prefix": ["@since"],
+		"body": ["@since ${1:MAJOR}.${2:MINOR}.${3:PATCH}"],
+		"description": "syntax: `@since <version>`"
+	},
+	"@todo ": {
+		"prefix": ["@todo"],
+		"body": ["@todo ${1:description}"],
+		"description": "syntax: `@todo <description>`"
+	},
+	"@version ": {
+		"prefix": ["@version "],
+		"body": ["@version ${1:MAJOR}.${2:MINOR}.${3:PATCH}"],
+		"description": "syntax: `@version <version>`"
+	},
+	"@license": {
+		"prefix": ["@license"],
+		"body": [
+			"/**",
+			" * @license",
+			" * Copyright ${1:NAME}. All Rights Reserved.",
+			" *",
+			" * Use of this source code is governed by an MIT-style license that can be",
+			" * found in the LICENSE file in the root directory of this source tree.",
+			" */"
+		],
+		"description": "@license\n"
+	}
+}

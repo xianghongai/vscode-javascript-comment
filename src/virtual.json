@@ -1,0 +1,22 @@
+{
+	"@external": {
+		"prefix": ["@external"],
+		"body": ["/**", " * @external {${1:identifier}} ${2:URL}", " */"],
+		"description": "syntax: `@external <identifier> <URL>`"
+	},
+	"@typedef (single)": {
+		"prefix": ["@typedef"],
+		"body": ["/** @typedef {${1:TYPE}} ${1:name} */"],
+		"description": "syntax: `@typedef <type> <property>`"
+	},
+	"@typedef": {
+		"prefix": ["@typedef"],
+		"body": ["@typedef {${1:TYPE}} ${1:name}"],
+		"description": "syntax: `@typedef <type> <property>`"
+	},
+	"@typedef property": {
+		"prefix": ["@typedef.property"],
+		"body": ["@property {${1:TYPE}} ${2:property} - ${3:description}"],
+		"description": "If '<typedef>' is Object, use `@property <type> <property> [description]` for each properties."
+	}
+}

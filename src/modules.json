@@ -1,0 +1,7 @@
+{
+	"@module": {
+		"prefix": "@module",
+		"body": ["/** @module ${1:moduleName} */"],
+		"description": "syntax: `@module [[{<type>}] <moduleName>]`"
+	}
+}
