@@ -20,16 +20,16 @@
   </a>
 </p>
 
-Add ESDoc/JSDoc general comments in TypeScript and JavaScript files. 
+[中文](./README_CN.md).
 
-Generate comments statically, not responsive. For parameter functions or variables of existing types, it is recommended to use the built-in `/**` to trigger.
+用于 JavaScript/TypeScript 注释的代码片断 (本扩展是静态的生成，不是根据变量响应式的生成，已有类型的参数函数或变量，建议用自带的 `/**` 触发)。
 
 ![JavaScript Comment Snippet](https://user-images.githubusercontent.com/58411528/82288531-41d84e00-99d5-11ea-829c-cd6a70b2cc0e.gif)
 
 
 ## Snippets
 
-Instructions with `single`, without triggering `///`, will generate a complete comment fragment.
+带 `single` 的指令，不用 `///` 触发，会生成一个完整的注释片断。
 
 - Comment Blocks
 - Common
@@ -40,9 +40,7 @@ Instructions with `single`, without triggering `///`, will generate a complete c
 
 ### Comment Blocks
 
-Generate a comment fragment triggered by `///`:
-
-`///` →
+通过 `///` 触发生成一个注释片断：
 
 ```js
 /**
@@ -50,9 +48,11 @@ Generate a comment fragment triggered by `///`:
  */
 ```
 
-Then use the following categories to add specific annotation content.
+然后用下面的分类去补充具体的注释内容。
 
 ### Common
+
+一些通用的注释
 
 - `@access`
 - `@deprecated`
@@ -69,6 +69,8 @@ Then use the following categories to add specific annotation content.
 - `@license`
 
 ### Type Syntax
+
+用于“类型”的注释
 
 | prefix              | body                                      |
 |---------------------|-------------------------------------------|
@@ -91,7 +93,9 @@ Then use the following categories to add specific annotation content.
 
 ### Function
 
-- `@return (single)`
+用于“函数”的注释
+
+- `@return (single)` - 带 `single` 的指令，不用 `///` 触发，会生成一个完整的注释片断。
 - `@return`
 - `@return property`
 - `@requires`
@@ -104,10 +108,10 @@ Then use the following categories to add specific annotation content.
 ### Class
 
 - `@class`
-- `@class.extends`, `@extends`
-- `@class.interface`, `@interface`
-- `@class.implements`, `@implements`
-- `@class.constructor`, `@constructor`
+- `@class.extends` / `@extends`
+- `@class.interface` / `@interface`
+- `@class.implements` / `@implements`
+- `@class.constructor` / `@constructor`
 - `@namespace`
 
 ### Misc
@@ -117,11 +121,12 @@ Then use the following categories to add specific annotation content.
 
 ## Resources
 
+具体的可以参考：
+
 - [jsdoc - Github](https://github.com/jsdoc/jsdoc)
 - [esdoc - Github](https://github.com/esdoc/esdoc)
 
-
-## `@param` Syntax
+## `@param` 语法
 
 | type               | syntax                                                                     |
 |--------------------|----------------------------------------------------------------------------|
