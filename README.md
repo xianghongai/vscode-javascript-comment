@@ -20,16 +20,15 @@
   </a>
 </p>
 
+[中文](./README_CN.md).
+
 Add ESDoc/JSDoc general comments in TypeScript and JavaScript files. 
 
 Generate comments statically, not responsive. For parameter functions or variables of existing types, it is recommended to use the built-in `/**` to trigger.
 
 ![JavaScript Comment Snippet](https://user-images.githubusercontent.com/58411528/82288531-41d84e00-99d5-11ea-829c-cd6a70b2cc0e.gif)
 
-
 ## Snippets
-
-Instructions with `single`, without triggering `///`, will generate a complete comment fragment.
 
 - Comment Blocks
 - Common
@@ -37,6 +36,8 @@ Instructions with `single`, without triggering `///`, will generate a complete c
 - Function
 - Class
 - Misc
+
+Instructions with `single`, without triggering `///`, will generate a complete comment fragment.
 
 ### Comment Blocks
 

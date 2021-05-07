@@ -20,8 +20,6 @@
   </a>
 </p>
 
-[中文](./README_CN.md).
-
 用于 JavaScript/TypeScript 注释的代码片断 (本扩展是静态的生成，不是根据变量响应式的生成，已有类型的参数函数或变量，建议用自带的 `/**` 触发)。
 
 ![JavaScript Comment Snippet](https://user-images.githubusercontent.com/58411528/82288531-41d84e00-99d5-11ea-829c-cd6a70b2cc0e.gif)
@@ -29,14 +27,14 @@
 
 ## Snippets
 
-带 `single` 的指令，不用 `///` 触发，会生成一个完整的注释片断。
-
 - Comment Blocks
 - Common
 - Type Syntax
 - Function
 - Class
 - Misc
+
+带 `single` 的指令，不用 `///` 触发，会生成一个完整的注释片断。
 
 ### Comment Blocks
 
