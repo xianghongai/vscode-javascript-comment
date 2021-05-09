@@ -32,6 +32,18 @@
     "js component"
   ],
   "contributes": {
+    "languages": [
+      {
+        "id": "vue",
+        "aliases": [
+          "Vue",
+          "vue"
+        ],
+        "extensions": [
+          ".vue"
+        ]
+      }
+    ],
     "snippets": [
       {
         "language": "javascript",
@@ -46,7 +58,7 @@
         "path": "./snippets/javascript.json"
       },
       {
-        "language": "typescriptreact",
+        "language": "javascriptreact",
         "path": "./snippets/javascript.json"
       },
       {
