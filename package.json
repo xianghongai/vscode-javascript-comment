@@ -4,7 +4,7 @@
   "displayName": "JavaScript Comment Snippet",
   "description": "Comment snippets for JavaScript",
   "icon": "art/icon.png",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "galleryBanner": {
     "color": "#ffffff",
     "theme": "dark"
@@ -39,10 +39,6 @@
       },
       {
         "language": "typescript",
-        "path": "./snippets/javascript.json"
-      },
-      {
-        "language": "javascriptreact",
         "path": "./snippets/javascript.json"
       },
       {

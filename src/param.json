@@ -23,9 +23,9 @@
 		"body": ["@param {Object} ${1:param} - ${2:description}"],
 		"description": "property param is Object"
 	},
-  "@param is Array": {
+	"@param is Array": {
 		"prefix": ["@param.array"],
-		"body": ["@param {Object[]} ${1:param} - ${2:description}"],
+		"body": ["@param {${3:Object}[]} ${1:param} - ${2:description}"],
 		"description": "property param is Array"
 	},
 	"@param is string": {
