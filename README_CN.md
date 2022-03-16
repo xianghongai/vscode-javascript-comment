@@ -24,6 +24,19 @@
 
 ![JavaScript Comment Snippet](https://user-images.githubusercontent.com/58411528/82288531-41d84e00-99d5-11ea-829c-cd6a70b2cc0e.gif)
 
+## 配置
+
+如果没有生效，可能需要配置编辑器。
+
+`Ctrl + Shift + P` / `⇧ + ⌘ + P` → `Preferences: Open Settings (JSON)`
+
+```json
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": false
+  },
+```
 
 ## Snippets
 

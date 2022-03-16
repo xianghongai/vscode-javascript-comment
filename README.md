@@ -28,6 +28,20 @@ Generate comments statically, not responsive. For parameter functions or variabl
 
 ![JavaScript Comment Snippet](https://user-images.githubusercontent.com/58411528/82288531-41d84e00-99d5-11ea-829c-cd6a70b2cc0e.gif)
 
+## Settings
+
+If that doesn't work, you may need to configure the editor.
+
+`Ctrl + Shift + P` / `⇧ + ⌘ + P` → `Preferences: Open Settings (JSON)`
+
+```json
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": false
+  },
+```
+
 ## Snippets
 
 - Comment Blocks
