@@ -1,0 +1,86 @@
+{
+	"@property": {
+		"prefix": ["@property"],
+		"body": [
+			"@property {${1:TYPE}} ${2:param}.${3:property} - ${4:description}\n* "
+		],
+		"description": "syntax: `@property <type> <param>.<property> [-] [description]`;\n- Nullable: `@property {?number} property - desc`, \n- Not Nullable: `@property {!Object} property - desc`\n- Union: `@property {number|string} property - desc`\n- Nullable and Union: `@property {?(number|string)} property - desc`\n- Spread: `@property {...number} property - desc`\n- Optional: `@property {number} [property]`\n- Default: `@property {number} [property=10]`\n- Function: `@property {function(foo: number, bar: string): boolean} property - desc`\n- Generics: `@property {Map<number, string>} property - desc`\n- Record: `@property {{foo: ?number, bar: string}} property - desc`\n"
+	},
+	"@property is an Object": {
+		"prefix": ["@property.object"],
+		"body": [
+			"@property {Object} ${1:param}.${2:property} - ${3:description}\n* "
+		],
+		"description": "property is an Object"
+	},
+	"@property is an Array": {
+		"prefix": ["@property.array"],
+		"body": [
+			"@property {${4:Object}[]} ${1:param}.${2:property} - ${3:description}\n* "
+		],
+		"description": "property is an Array"
+	},
+	"@property is a string": {
+		"prefix": ["@property.string"],
+		"body": [
+			"@property {string} ${1:param}.${2:property} - ${3:description}\n* "
+		],
+		"description": "property is a string"
+	},
+	"@property is a number": {
+		"prefix": ["@property.number"],
+		"body": [
+			"@property {number} ${1:param}.${2:property} - ${3:description}\n* "
+		],
+		"description": "property is a number"
+	},
+	"@property is a boolean": {
+		"prefix": ["@property.boolean"],
+		"body": [
+			"@property {boolean} ${1:param}.${2:property} - ${3:description}\n* "
+		],
+		"description": "property is a boolean"
+	},
+	"@property is a Function": {
+		"prefix": ["@property.function"],
+		"body": [
+			"@property {Function} ${1:param}.${2:property} - ${3:description}\n* "
+		],
+		"description": "property is a Function"
+	},
+	"@property is a DOMElement": {
+		"prefix": ["@property.DOMElement"],
+		"body": [
+			"@property {DOMElement} ${1:param}.${2:property} - ${3:description}\n* "
+		],
+		"description": "property is a DOM element"
+	},
+	"@property is a Node": {
+		"prefix": ["@property.Node"],
+		"body": [
+			"@property {Node} ${1:param}.${2:property} - ${3:description}\n* "
+		],
+		"description": "property is a DOM node"
+	},
+	"@property is a NodeList": {
+		"prefix": ["@property.NodeList"],
+		"body": [
+			"@property {NodeList} ${1:param}.${2:property} - ${3:description}\n* "
+		],
+		"description": "property is a an array of nodes or NodeList"
+	},
+	"@property is a RegExp": {
+		"prefix": ["@property.RegExp"],
+		"body": [
+			"@property {RegExp} ${1:param}.${2:property} - ${3:description}\n* "
+		],
+		"description": "property is a RegExp"
+	},
+	"@property is a Generics": {
+		"prefix": ["@property.generics"],
+		"body": [
+			"@property {${1:Array}<${2:string}>} ${3:param}.${4:property} - ${5:description}\n* "
+		],
+		"description": "property is a Generics Type"
+	}
+}

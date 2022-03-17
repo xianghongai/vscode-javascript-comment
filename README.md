@@ -85,24 +85,23 @@ Then use the following categories to add specific annotation content.
 
 ### Type Syntax
 
-| prefix              | body                                      |
-|---------------------|-------------------------------------------|
-| `@param`            | `@param {TYPE} param - description`    |
-| `@param.property`   | `@param {?TYPE} param.name - description` |
-| `@param.boolean`    | `@param {boolean} param - description`    |
-| `@param.Object`     | `@param {Object} param - description`     |
-| `@param.string`     | `@param {string} param - description`     |
-| `@param.number`     | `@param {number} param - description`     |
-| `@param.boolean`    | `@param {boolean} param - description`    |
-| `@param.Function`   | `@param {Function} param - description`   |
-| `@param.DOMElement` | `@param {DOMElement} param - description` |
-| `@param.Node`       | `@param {Node} param - description`       |
-| `@param.NodeList`   | `@param {NodeList} param - description`   |
-| `@param.RegExp`     | `@param {RegExp} param - description`     |
-| `@type`             | `@type {TYPE} - description`              |
-| `@type.property`    | `@property {TYPE} name - description`     |
-| `@typedef`          | `@typedef {TYPE} name - description`      |
-| `@typedef.property` | `@property {TYPE} name - description`     |
+| prefix              | body                                            |
+|---------------------|-------------------------------------------------|
+| `@param`            | `@param {TYPE} param - description`             |
+| `@param.property`   | `@param {?TYPE} param.name - description`       |
+| `@param.boolean`    | `@param {boolean} param - description`          |
+| `@param.Object`     | `@param {Object} param - description`           |
+| `@param.string`     | `@param {string} param - description`           |
+| `@param.number`     | `@param {number} param - description`           |
+| `@param.boolean`    | `@param {boolean} param - description`          |
+| `@param.Function`   | `@param {Function} param - description`         |
+| `@param.DOMElement` | `@param {DOMElement} param - description`       |
+| `@param.Node`       | `@param {Node} param - description`             |
+| `@param.NodeList`   | `@param {NodeList} param - description`         |
+| `@param.RegExp`     | `@param {RegExp} param - description`           |
+| `@type`             | `@type {TYPE} - description`                    |
+| `@typedef`          | `@typedef {TYPE} name - description`            |
+| `@property`         | `@property {TYPE} param.name - description`     |
 
 ### Function
 
@@ -136,7 +135,7 @@ Then use the following categories to add specific annotation content.
 - [esdoc - Github](https://github.com/esdoc/esdoc)
 
 
-## `@param` Syntax
+## `@param`/`@property` Syntax
 
 | type               | syntax                                                                     |
 |--------------------|----------------------------------------------------------------------------|

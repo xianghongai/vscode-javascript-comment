@@ -85,7 +85,7 @@
 
 | prefix              | body                                      |
 |---------------------|-------------------------------------------|
-| `@param`            | `@param {TYPE} param - description`    |
+| `@param`            | `@param {TYPE} param - description`       |
 | `@param.property`   | `@param {?TYPE} param.name - description` |
 | `@param.boolean`    | `@param {boolean} param - description`    |
 | `@param.Object`     | `@param {Object} param - description`     |
@@ -98,9 +98,8 @@
 | `@param.NodeList`   | `@param {NodeList} param - description`   |
 | `@param.RegExp`     | `@param {RegExp} param - description`     |
 | `@type`             | `@type {TYPE} - description`              |
-| `@type.property`    | `@property {TYPE} name - description`     |
 | `@typedef`          | `@typedef {TYPE} name - description`      |
-| `@typedef.property` | `@property {TYPE} name - description`     |
+| `@property`         | `@property {TYPE} name - description`     |
 
 ### Function
 
@@ -137,7 +136,7 @@
 - [jsdoc - Github](https://github.com/jsdoc/jsdoc)
 - [esdoc - Github](https://github.com/esdoc/esdoc)
 
-## `@param` 语法
+## `@param`/`@property` 语法
 
 | type               | syntax                                                                     |
 |--------------------|----------------------------------------------------------------------------|

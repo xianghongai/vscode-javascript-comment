@@ -8,10 +8,5 @@
 		"prefix": ["@type"],
 		"body": ["@type {${1:TYPE}} - ${2:description}"],
 		"description": "syntax: `@type <type>`"
-	},
-	"@type property": {
-		"prefix": ["@type.property"],
-		"body": ["@property {${1:TYPE}} ${2:property} - ${3:description}"],
-		"description": "If '<type>' is Object, use `@property <type> <property> [description]` for each properties."
 	}
 }
