@@ -22,7 +22,7 @@
 
 [中文](./README_CN.md).
 
-Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
+Quickly generate JavaScript/TypeScript comments according to JSDoc, ESDoc and TSDoc rules, and use `@` to trigger to reduce the burden of memory.
 
 Generate comments statically, not responsive. For parameter functions or variables of existing types, it is recommended to use the built-in `/**` to trigger.
 
@@ -67,6 +67,69 @@ Generate a comment fragment triggered by `///`:
 
 Then use the following categories to add specific annotation content.
 
+### Type Syntax
+
+| prefix                                   | body                                                 |
+|------------------------------------------|------------------------------------------------------|
+| `@param` →                               | `@param {TYPE} param - description`                  |
+| `@param.property` →                      | `@param {?TYPE} param.name - description`            |
+| `@param.any`        `@paa` →             | `@param {\*} param - description`                    |
+| `@param.object`     `@pao`,    `@ppo` →  | `@param {Object} param - description`                |
+| `@param.array`      `@paar`,   `@ppar` → | `@param {Object[]} param - description`              |
+| `@param.string`     `@pas`,    `@pps` →  | `@param {string} param - description`                |
+| `@param.number`     `@panu`,    `@ppn` → | `@param {number} param - description`                |
+| `@param.boolean`    `@pab`,    `@ppb` →  | `@param {boolean} param - description`               |
+| `@param.Function`   `@paf`,    `@ppf` →  | `@param {Function} param - description`              |
+| `@param.DOMElement` `@pad`,    `@ppd` →  | `@param {DOMElement} param - description`            |
+| `@param.Node`       `@pan`, `@ppnode` →  | `@param {Node} param - description`                  |
+| `@param.NodeList`   `@panl`,   `@ppnl` → | `@param {NodeList} param - description`              |
+| `@param.RegExp`     `@pare`,   `@ppre` → | `@param {RegExp} param - description`                |
+| `@param.generics`   `@pag`,    `@ppg` →  | `@param {GenericIdentity<Type>} param - description` |
+| `@type` →                                | `@type {TYPE} - description`                         |
+| `@typedef` →                             | `@typedef {TYPE} Name - description`                 |
+| `@typeParam` →                           | `@typeParam {TYPE} Name - description`               |
+
+### `@type`, `@typedef`, `@return` properties
+
+| prefix                   | body                                            |
+|--------------------------|-------------------------------------------------|
+| `@property` →            | `@property {TYPE} property - description`       |
+| `@property.boolean` →    | `@property {boolean} property - description`    |
+| `@property.Object` →     | `@property {Object} property - description`     |
+| `@property.string` →     | `@property {string} property - description`     |
+| `@property.number` →     | `@property {number} property - description`     |
+| `@property.boolean` →    | `@property {boolean} property - description`    |
+| `@property.Function` →   | `@property {Function} property - description`   |
+| `@property.DOMElement` → | `@property {DOMElement} property - description` |
+| `@property.Node` →       | `@property {Node} property - description`       |
+| `@property.NodeList` →   | `@property {NodeList} property - description`   |
+| `@property.RegExp` →     | `@property {RegExp} property - description`     |
+
+### Function
+
+| prefix                    | body                                                                                        |
+|---------------------------|---------------------------------------------------------------------------------------------|
+| `@return`/`@rt` →         | `@return {TYPE} description`                                                                |
+| `@return.promise`/`@rp` → | `@return {Promise<TYPE>} description`                                                       |
+| `@return (single)` →      | `/** @return {TYPE} description */`                                                         |
+| `@requires` →             | `@requires module`                                                                          |
+| `@emits` →                | `/** @emits {eventName} emit event when ... */`                                             |
+| `@listens` →              | `/** @listens {eventName} listen event because ... */`                                      |
+| `@throws` →               | `/** @throws {errorType} Will throw an error if argument is null./Argument x must be x. */` |
+
+### Class
+
+| prefix                                                       | body                         |
+|--------------------------------------------------------------|------------------------------|
+| `@class` →                                                   | `/** @class description. */` |
+| `@class.extends`, `@extends` →                               | `@extends {SuperClass}`      |
+| `@class.interface`, `@interface` →                           | `/** @interface */`          |
+| `@class.implements`, `@implements` →                         | `@implements {Interface}`    |
+| `@class.constructor`, `@constructor` →                       | `/** @constructor */`        |
+| `@class.virtual`/`@class.abstract`, `@virtual`/`@abstract` → | `/** @virtual */`            |
+| `@class.sealed`, `@sealed` →                                 | /** @sealed */               |
+| `@class.override`, `@override` →                             | /** @override */             |
+
 ### Common
 
 - `@access`
@@ -75,55 +138,14 @@ Then use the following categories to add specific annotation content.
 - `@example`
 - `@experimental`
 - `@ignore`
-- `@link`
-- `@see`
+- `@link` → `{@link <identifier>}`
+- `@see` → `@see <URL>`
 - `@note`
 - `@since` → `@since MAJOR.MINOR.PATCH`
-- `@todo`
+- `@todo` → `@todo description`
 - `@version` → `@version MAJOR.MINOR.PATCH`
 - `@internal`
 - `@license`
-
-### Type Syntax
-
-| prefix              | body                                            |
-|---------------------|-------------------------------------------------|
-| `@param`            | `@param {TYPE} param - description`             |
-| `@param.property`   | `@param {?TYPE} param.name - description`       |
-| `@param.boolean`    | `@param {boolean} param - description`          |
-| `@param.Object`     | `@param {Object} param - description`           |
-| `@param.string`     | `@param {string} param - description`           |
-| `@param.number`     | `@param {number} param - description`           |
-| `@param.boolean`    | `@param {boolean} param - description`          |
-| `@param.Function`   | `@param {Function} param - description`         |
-| `@param.DOMElement` | `@param {DOMElement} param - description`       |
-| `@param.Node`       | `@param {Node} param - description`             |
-| `@param.NodeList`   | `@param {NodeList} param - description`         |
-| `@param.RegExp`     | `@param {RegExp} param - description`           |
-| `@type`             | `@type {TYPE} - description`                    |
-| `@typedef`          | `@typedef {TYPE} name - description`            |
-| `@property`         | `@property {TYPE} param.name - description`     |
-
-### Function
-
-- `@return (single)`
-- `@return`
-- `@return property`
-- `@requires`
-- `@abstract`
-- `@emits`
-- `@listens`
-- `@override`
-- `@throws`
-
-### Class
-
-- `@class`
-- `@class.extends`, `@extends`
-- `@class.interface`, `@interface`
-- `@class.implements`, `@implements`
-- `@class.constructor`, `@constructor`
-- `@namespace`
 
 ### Misc
 
@@ -132,9 +154,9 @@ Then use the following categories to add specific annotation content.
 
 ## Resources
 
-- [jsdoc - Github](https://github.com/jsdoc/jsdoc)
-- [esdoc - Github](https://github.com/esdoc/esdoc)
-
+- [JSDoc - Github](https://github.com/jsdoc/jsdoc)/[https://jsdoc.app/](https://jsdoc.app/)
+- [ESDoc - Github](https://github.com/esdoc/esdoc)/[https://esdoc.org/](https://esdoc.org/)
+- [TSDoc - Github](https://github.com/microsoft/tsdoc)/[https://tsdoc.org/](https://tsdoc.org/)
 
 ## `@param`/`@property` Syntax
 
@@ -144,8 +166,8 @@ Then use the following categories to add specific annotation content.
 | Array              | `@param {string[]} param - description`                                    |
 | Nullable           | `@param {?Object} param - description`                                     |
 | Not Nullable       | `@param {!Object} param - description`                                     |
-| Union              | `@param {number\|string} param - description`                               |
-| Nullable and Union | `@param {?(number\|string)} param - description`                            |
+| Union              | `@param {number\|string} param - description`                              |
+| Nullable and Union | `@param {?(number\|string)} param - description`                           |
 | Spread             | `@param {...number} param - description`                                   |
 | Optional           | `@param {number} [param] - description`                                    |
 | Default            | `@param {number} [param=10] - description`                                 |

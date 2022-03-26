@@ -1,0 +1,57 @@
+{
+	"@param property is an Object": {
+		"prefix": ["@param.property.object"],
+		"body": ["@param {Object} ${1:param}.${2:property} - ${3:description}"],
+		"description": "parameter property is an Object\n"
+	},
+	"@param property is an Array": {
+		"prefix": ["@param.property.array"],
+		"body": ["@param {${3:Object}[]} ${1:param}.${2:property} - ${4:description}"],
+		"description": "parameter property is an Array\n"
+	},
+	"@param property is a string": {
+		"prefix": ["@param.property.string"],
+		"body": ["@param {string} ${1:param}.${2:property} - ${3:description}"],
+		"description": "parameter property is a string\n"
+	},
+	"@param property is a number": {
+		"prefix": ["@param.property.number"],
+		"body": ["@param {number} ${1:param}.${2:property} - ${3:description}"],
+		"description": "parameter property is a number\n"
+	},
+	"@param property is a boolean": {
+		"prefix": ["@param.property.boolean"],
+		"body": ["@param {boolean} ${1:param}.${2:property} - ${3:description}"],
+		"description": "parameter property is a boolean\n"
+	},
+	"@param property is a Function": {
+		"prefix": ["@param.property.function"],
+		"body": ["@param {Function} ${1:param}.${2:property} - ${3:description}"],
+		"description": "parameter property is a Function\n"
+	},
+	"@param property is a DOMElement": {
+		"prefix": ["@param.property.DOMElement"],
+		"body": ["@param {DOMElement} ${1:param}.${2:property} - ${3:description}"],
+		"description": "parameter property is a DOM element\n"
+	},
+	"@param property is a Node": {
+		"prefix": ["@param.property.Node"],
+		"body": ["@param {Node} ${1:param}.${2:property} - ${3:description}"],
+		"description": "parameter property is a DOM node\n"
+	},
+	"@param property is a NodeList": {
+		"prefix": ["@param.property.NodeList"],
+		"body": ["@param {NodeList} ${1:param}.${2:property} - ${3:description}"],
+		"description": "parameter property is an array of nodes or NodeList\n"
+	},
+	"@param property is a RegExp": {
+		"prefix": ["@param.property.RegExp"],
+		"body": ["@param {RegExp} ${1:param}.${2:property} - ${3:description}"],
+		"description": "parameter property is a RegExp\n"
+	},
+	"@param property is a Generics": {
+		"prefix": ["@param.property.generics"],
+		"body": ["@param {${1:Array}<${2:string}>} ${3:param}.${4:property} - ${5:description}"],
+		"description": "parameter property is a Generics Type\n"
+	}
+}

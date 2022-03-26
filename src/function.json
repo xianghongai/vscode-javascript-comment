@@ -1,27 +1,26 @@
 {
 	"@return": {
-		"prefix": ["@return"],
-		"body": ["@return {${1:TYPE}} ${2:description}"],
-		"description": "syntax: `@return <type> [description]`\nUsed to document the return value for a function.\nhttps://esdoc.org/manual/tags.html#-return\nhttps://tsdoc.org/pages/tags/returns/\n"
+		"prefix": ["@rt", "@return"],
+		"body": ["@return ${1:{${2:TYPE}\\} }${3:description}"],
+		"description": "syntax: `@return <type> [description]`;\nUsed to document the return value for a function.\nhttps://esdoc.org/manual/tags.html#-return\nhttps://tsdoc.org/pages/tags/returns/\n"
 	},
 	"@return.promise": {
-		"prefix": ["@return.promise"],
+		"prefix": ["@rp", "@return.promise"],
 		"body": ["@return {Promise<${1:TYPE}>} ${2:description}"],
-		"description": "syntax: `@return <type> [description]`\n"
+		"description": "syntax: `@return <type> [description]`;\n"
 	},
-	"@return property": {
-		"prefix": ["@return.property"],
-		"body": ["@property {${1:TYPE}} ${2:property} - ${3:description}"],
-		"description": "If return Object, use `@property <type> <property> [description]` for each properties.\n"
-	},
-  "@return (single)": {
+	"@return (single)": {
 		"prefix": ["@return"],
-		"body": ["/**", " *@return {${1:TYPE}} ${2:description}", " */"],
-		"description": "syntax: `@return <type> [description]`\nUsed to document the return value for a function.\nhttps://esdoc.org/manual/tags.html#-return\nhttps://tsdoc.org/pages/tags/returns/\n"
+		"body": [
+			"/**",
+			" * @return {${1:TYPE}} ${2:description}",
+			" */"
+		],
+		"description": "syntax: `@return <type> [description]`;\nUsed to document the return value for a function.\nhttps://esdoc.org/manual/tags.html#-return\nhttps://tsdoc.org/pages/tags/returns/\n"
 	},
 	"@requires": {
 		"prefix": ["@requires"],
 		"body": ["@requires ${1:module}"],
-		"description": "syntax: `@requires <someModuleName>`\nThis file requires a JavaScript module.\nhttps://jsdoc.app/tags-requires.html\n"
+		"description": "syntax: `@requires <someModuleName>`;\nThis file requires a JavaScript module.\nhttps://jsdoc.app/tags-requires.html\n"
 	}
 }

@@ -7,17 +7,17 @@
 	"@access": {
 		"prefix": ["@access"],
 		"body": ["@access ${1:public|protected|package|private}"],
-		"description": "syntax: `@access <public|protected|package|private>`\nAlias are @public, @protected, @package and @private.\nSpecify the access level of this member (private, package-private, public, or protected).\nhttps://jsdoc.app/tags-access.html\n"
+		"description": "syntax: `@access <public|protected|package|private>`;\nAlias are @public, @protected, @package and @private.\nSpecify the access level of this member (private, package-private, public, or protected).\nhttps://jsdoc.app/tags-access.html\n"
 	},
 	"@deprecated": {
 		"prefix": ["@deprecated"],
 		"body": ["@deprecated ${1:description}"],
-		"description": "syntax: `@deprecated [description]`\neg. @deprecated Use {@link <identifier>} instead.\nhttps://esdoc.org/manual/tags.html#-deprecated\n"
+		"description": "syntax: `@deprecated [description]`;\neg. @deprecated Use {@link <identifier>} instead;\nhttps://esdoc.org/manual/tags.html#-deprecated\n"
 	},
 	"@desc": {
 		"prefix": ["@desc"],
 		"body": ["@desc ${1:description}"],
-		"description": "syntax: `@desc <description>`\n<description> supports markdown.\nNormally you don't need to use @desc, because first section in doc comment is determined automatically as @desc.\nhttps://jsdoc.app/tags-description.html\n"
+		"description": "syntax: `@desc <description>`;\n<description> supports markdown;\nNormally you don't need to use @desc, because first section in doc comment is determined automatically as @desc.\nhttps://jsdoc.app/tags-description.html\n"
 	},
 	"@example": {
 		"prefix": ["@example"],
@@ -29,27 +29,27 @@
 			"* ```",
 			"* $0"
 		],
-		"description": "syntax: `@example <JavaScript>`\nProvide an example of how to use a documented item.\nhttps://esdoc.org/manual/tags.html#-example\n"
+		"description": "syntax: `@example <JavaScript>`;\nProvide an example of how to use a documented item.\nhttps://esdoc.org/manual/tags.html#-example\n"
 	},
 	"@experimental": {
 		"prefix": ["@experimental"],
 		"body": ["@experimental ${1:this ${2:class} includes breaking change.}"],
-		"description": "syntax: `@experimental [description]`\nhttps://esdoc.org/manual/tags.html#-example\n"
+		"description": "syntax: `@experimental [description]`;\nhttps://esdoc.org/manual/tags.html#-example\n"
 	},
 	"@ignore": {
 		"prefix": ["@ignore"],
 		"body": ["@ignore"],
-		"description": "syntax: `@ignore`\nThe identifier is not displayed in document, Omit a symbol from the documentation.\nhttps://jsdoc.app/tags-ignore.html\n"
+		"description": "syntax: `@ignore`;\nThe identifier is not displayed in document, Omit a symbol from the documentation.\nhttps://jsdoc.app/tags-ignore.html\n"
 	},
 	"@link": {
 		"prefix": ["@link"],
 		"body": ["{@link ${1:<identifier>}}"],
-		"description": "syntax: `{@link <identifier>}`\nlink other identifier\nLinks can point to a URL: {@link https://github.com/microsoft/tsdoc}\nLinks can point to an API item: {@link Button}\nhttps://tsdoc.org/pages/tags/link/\n"
+		"description": "syntax: `{@link <identifier>}`;\nlink other identifier\nLinks can point to a URL: {@link https://github.com/microsoft/tsdoc}\nLinks can point to an API item: {@link Button}\nhttps://tsdoc.org/pages/tags/link/\n"
 	},
 	"@see": {
 		"prefix": ["@see"],
 		"body": ["@see ${1:<URL>}"],
-		"description": "syntax: `@see <URL>`\nRefer to some other documentation for more information.\nhttps://tsdoc.org/pages/tags/see/\n"
+		"description": "syntax: `@see <URL>`;\nRefer to some other documentation for more information.\nhttps://tsdoc.org/pages/tags/see/\n"
 	},
 	"@note": {
 		"prefix": ["@note"],
@@ -59,17 +59,17 @@
 	"@since": {
 		"prefix": ["@since"],
 		"body": ["@since ${1:MAJOR}.${2:MINOR}.${3:PATCH}"],
-		"description": "syntax: `@since <version>`\nWhen was this feature added?\nhttps://jsdoc.app/tags-since.html\n"
+		"description": "syntax: `@since <version>`;\nWhen was this feature added?\nhttps://jsdoc.app/tags-since.html\n"
 	},
 	"@todo ": {
 		"prefix": ["@todo"],
 		"body": ["@todo ${1:description}"],
-		"description": "syntax: `@todo <description>`\nDocument tasks to be completed.\nhttps://jsdoc.app/tags-todo.html\n"
+		"description": "syntax: `@todo <description>`;\nDocument tasks to be completed.\nhttps://jsdoc.app/tags-todo.html\n"
 	},
 	"@version ": {
 		"prefix": ["@version"],
 		"body": ["@version ${1:MAJOR}.${2:MINOR}.${3:PATCH}"],
-		"description": "syntax: `@version <version>`\nDocuments the version number of an item.\nhttps://jsdoc.app/tags-version.html\n"
+		"description": "syntax: `@version <version>`;\nDocuments the version number of an item.\nhttps://jsdoc.app/tags-version.html\n"
 	},
 	"@license": {
 		"prefix": ["@license"],

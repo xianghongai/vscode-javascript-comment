@@ -1,66 +1,64 @@
 {
-	"@namespace": {
-		"prefix": ["@namespace"],
-		"body": "/** @namespace */",
-		"description": "`@namespace [[{<type>}] <SomeName>]`\nDocument a namespace object.\nThe @namespace tag indicates that an object creates a namespace for its members. You can also write a virtual JSDoc comment that defines a namespace used by your code.\nhttps://jsdoc.app/tags-namespace.html\n"
-	},
 	"@class": {
 		"prefix": ["@class"],
-		"body": ["/**", " * @class", " * ${2:description}.", " */"],
+		"body": [
+			"/**",
+			" * @class",
+			" * ${2:description}",
+			" */"
+		],
 		"description": "The @class tag marks a function as being a constructor, meant to be called with the new keyword to return an instance.\nhttps://jsdoc.app/tags-class.html\n"
 	},
 	"@extends": {
 		"prefix": ["@class.extends", "@extends"],
 		"body": ["@extends {${1:SuperClass}}"],
-		"description": "syntax: @extends <identifier>\nsynonyms: @augments\nNormally you don't need to use `@extends`. because ES2015 has the Class-Extends syntax. however, you can use this tag if you want to explicitly specify.\nhttps://esdoc.org/manual/tags.html#-extends\nhttps://jsdoc.app/tags-augments.html\n"
+		"description": "syntax: @extends <identifier>;\nsynonyms: @augments;\nNormally you don't need to use `@extends`. because ES2015 has the Class-Extends syntax. however, you can use this tag if you want to explicitly specify.\nhttps://esdoc.org/manual/tags.html#-extends\nhttps://jsdoc.app/tags-augments.html\n"
 	},
 	"@interface": {
 		"prefix": ["@class.interface", "@interface"],
 		"body": [
 			"/**",
-			" * $1",
+			" * ${1:description}",
 			" *",
 			" * @interface",
 			" */"
 		],
-		"description": "syntax: @interface\nhttps://jsdoc.app/tags-interface.html\n"
+		"description": "syntax: @interface;\nhttps://jsdoc.app/tags-interface.html\n"
 	},
 	"@implements": {
 		"prefix": ["@class.implements", "@implements"],
 		"body": ["@implements {${1:Interface}}"],
-		"description": "syntax: @implements <identifier>\nThis symbol implements an interface.\nhttps://jsdoc.app/tags-implements.html\n"
-	},
-	"@abstract": {
-		"prefix": ["@abstract"],
-		"body": [
-			"/**",
-			" * this method must be overridden by sub class.",
-			" * @abstract",
-			" */"
-		],
-		"description": "syntax: `@abstract`\nsynonyms: @virtual.\nhttps://esdoc.org/manual/tags.html#-abstract\n"
-	},
-	"@virtual": {
-		"prefix": ["@virtual"],
-		"body": [
-			"/** @virtual */"
-		],
-		"description": "This modifier has similar semantics to the `virtual` keyword in C# or Java. For a member function or property, explicitly indicates that subclasses may override (i.e. redefine) the member.\nA documentation tool may enforce that the `@virtual`, `@override`, and/or `@sealed` modifiers are consistently applied, but this is not required by the TSDoc standard.\nhttps://tsdoc.org/pages/tags/override/\nhttps://tsdoc.org/pages/tags/virtual/\n"
-	},
-	"@sealed": {
-		"prefix": ["@sealed"],
-		"body": ["/** @sealed */"],
-		"description": "This modifier has similar semantics to the `sealed` keyword in C# or Java. For a class, indicates that subclasses must not inherit from the class. For a member function or property, indicates that subclasses must not override (i.e. redefine) the member.\nA documentation tool may enforce that the `@virtual`, `@override`, and/or `@sealed` modifiers are consistently applied, but this is not required by the TSDoc standard.\nhttps://tsdoc.org/pages/tags/override/\nhttps://tsdoc.org/pages/tags/sealed/\n"
-	},
-	"@override": {
-		"prefix": ["@override"],
-		"body": ["/** @override */"],
-		"description": "This modifier has similar semantics to the `override` keyword in C# or Java. For a member function or property, explicitly indicates that this definition is overriding (i.e. redefining) the definition inherited from the base class. The base class definition would normally be marked as `virtual`.\nA documentation tool may enforce that the `@virtual`, `@override`, and/or `@sealed` modifiers are consistently applied, but this is not required by the TSDoc standard.\nhttps://tsdoc.org/pages/tags/override/\n"
+		"description": "syntax: @implements <identifier>;\nThis symbol implements an interface.\nhttps://jsdoc.app/tags-implements.html\n"
 	},
 	"@constructor": {
 		"prefix": ["@class.constructor", "@constructor"],
 		"body": "/** @constructor */",
 		"description": "This function member will be the constructor for the previous class.\nhttps://jsdoc.app/tags-constructs.html\n"
+	},
+	"@abstract": {
+		"prefix": ["@class.abstract", "@abstract"],
+		"body": [
+			"/**",
+			" * ${1: this method must be overridden by sub class.}",
+			" * @abstract",
+			" */"
+		],
+		"description": "syntax: `@abstract`;\nsynonyms: @virtual;\nhttps://esdoc.org/manual/tags.html#-abstract\n"
+	},
+	"@virtual": {
+		"prefix": ["@class.virtual", "@virtual"],
+		"body": [ "/** @virtual */" ],
+		"description": "This modifier has similar semantics to the `virtual` keyword in C# or Java. For a member function or property, explicitly indicates that subclasses may override (i.e. redefine) the member.\nA documentation tool may enforce that the `@virtual`, `@override`, and/or `@sealed` modifiers are consistently applied, but this is not required by the TSDoc standard.\nhttps://tsdoc.org/pages/tags/override/\nhttps://tsdoc.org/pages/tags/virtual/\n"
+	},
+	"@sealed": {
+		"prefix": ["@class.sealed", "@sealed"],
+		"body": ["/** @sealed */"],
+		"description": "This modifier has similar semantics to the `sealed` keyword in C# or Java. For a class, indicates that subclasses must not inherit from the class. For a member function or property, indicates that subclasses must not override (i.e. redefine) the member.\nA documentation tool may enforce that the `@virtual`, `@override`, and/or `@sealed` modifiers are consistently applied, but this is not required by the TSDoc standard.\nhttps://tsdoc.org/pages/tags/override/\nhttps://tsdoc.org/pages/tags/sealed/\n"
+	},
+	"@override": {
+		"prefix": ["@class.override", "@override"],
+		"body": ["/** @override */"],
+		"description": "This modifier has similar semantics to the `override` keyword in C# or Java. For a member function or property, explicitly indicates that this definition is overriding (i.e. redefining) the definition inherited from the base class. The base class definition would normally be marked as `virtual`.\nA documentation tool may enforce that the `@virtual`, `@override`, and/or `@sealed` modifiers are consistently applied, but this is not required by the TSDoc standard.\nhttps://tsdoc.org/pages/tags/override/\n"
 	},
 	"@internal": {
 		"prefix": ["@internal"],

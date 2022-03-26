@@ -1,25 +1,39 @@
 {
   "@emits": {
 		"prefix": ["@emits"],
-		"body": ["/**", " * @emits {${1:MyEvent}} ${2:emit event when ...}", " */"],
-		"description": "syntax: `@emits <identifier> [description]`\nhttps://esdoc.org/manual/tags.html#-emits\n"
+		"body": [
+			"/**",
+			" * @emits {${1:eventName}} ${2:emit event when ...}",
+			" */"
+		],
+		"description": "syntax: `@emits <identifier> [description]`;\nsynonyms: @fires;\nhttps://esdoc.org/manual/tags.html#-emits\nhttps://jsdoc.app/tags-fires.html\n"
 	},
 	"@listens": {
 		"prefix": ["@listens"],
 		"body": [
 			"/**",
-			" * @listens {${1:MyEvent}} ${2:listen event because ...}",
+			" * @listens {${1:eventName}} ${2:listen event because ...}",
 			" */"
 		],
-		"description": "syntax: `@listens <identifier> [description]`\n"
+		"description": "syntax: `@listens <identifier> [description]`;\nhttps://esdoc.org/manual/tags.html#-listens\nhttps://jsdoc.app/tags-listens.html\n"
 	},
   "@throws": {
 		"prefix": ["@throws"],
 		"body": [
 			"/**",
-			" * @throws {${1:MyError}} ${2:throw error when ...}",
+			" * @throws {${1:errorType}} ${2:Will throw an error if argument is null./Argument x must be non-zero.}",
 			" */"
 		],
-		"description": "syntax: `@throws <identifier> [description]`\n"
+		"description": "syntax: `@throws <identifier> [description]`;\nsynonyms: @exception;\neg. @throws {@link IsbnSyntaxError}\nhttps://tsdoc.org/pages/tags/throws/\nhttps://esdoc.org/manual/tags.html#-throws\nhttps://jsdoc.app/tags-throws.html\n"
+	},
+	"@eventProperty": {
+		"prefix": ["@eventProperty"],
+		"body": [
+			"/**",
+			" * ${1:This event is fired whenever }",
+			" * @eventProperty",
+			" */"
+		],
+		"description": "When applied to a class or interface property, this indicates that the property returns an event object that event handlers can be attached to.\nhttps://tsdoc.org/pages/tags/eventproperty/\n"
 	}
 }
