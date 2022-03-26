@@ -22,7 +22,7 @@
 
 [中文](./README_CN.md).
 
-Add ESDoc/JSDoc general comments in TypeScript and JavaScript files. 
+Add ESDoc/JSDoc general comments in TypeScript and JavaScript files.
 
 Generate comments statically, not responsive. For parameter functions or variables of existing types, it is recommended to use the built-in `/**` to trigger.
 
@@ -81,6 +81,7 @@ Then use the following categories to add specific annotation content.
 - `@since` → `@since MAJOR.MINOR.PATCH`
 - `@todo`
 - `@version` → `@version MAJOR.MINOR.PATCH`
+- `@internal`
 - `@license`
 
 ### Type Syntax

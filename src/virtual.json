@@ -2,16 +2,16 @@
 	"@external": {
 		"prefix": ["@external"],
 		"body": ["/**", " * @external {${1:identifier}} ${2:URL}", " */"],
-		"description": "syntax: `@external <identifier> <URL>`"
+		"description": "syntax: `@external <identifier> <URL>`\n"
 	},
 	"@typedef (single)": {
 		"prefix": ["@typedef"],
 		"body": ["/** @typedef {${1:TYPE}} ${1:name} */"],
-		"description": "syntax: `@typedef <type> <property>`"
+		"description": "syntax: `@typedef <type> <property>`\n"
 	},
 	"@typedef": {
 		"prefix": ["@typedef"],
-		"body": ["@typedef {${1:TYPE}} ${1:name}"],
-		"description": "syntax: `@typedef <type> <property>`"
+		"body": ["@typedef {${1:TYPE}} ${1:Name}"],
+		"description": "syntax: `@typedef <type> <Name>`\n"
 	}
 }

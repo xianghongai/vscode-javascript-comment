@@ -2,11 +2,11 @@
 	"@type (single)": {
 		"prefix": ["@type"],
 		"body": ["/** @type {${1:TYPE}} - ${2:description} */"],
-		"description": "syntax: `@type <type>`"
+		"description": "syntax: `@type <type>`\n"
 	},
 	"@type": {
 		"prefix": ["@type"],
 		"body": ["@type {${1:TYPE}} - ${2:description}"],
-		"description": "syntax: `@type <type>`"
+		"description": "syntax: `@type <type>`\n"
 	}
 }

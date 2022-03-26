@@ -1,60 +1,27 @@
 {
-	"@return (single)": {
-		"prefix": ["@return"],
-		"body": ["/**", " *@return {${1:TYPE}} ${2:description}", " */"],
-		"description": "syntax: `@return <type> [description]`"
-	},
 	"@return": {
 		"prefix": ["@return"],
 		"body": ["@return {${1:TYPE}} ${2:description}"],
-		"description": "syntax: `@return <type> [description]`"
+		"description": "syntax: `@return <type> [description]`\nUsed to document the return value for a function.\nhttps://esdoc.org/manual/tags.html#-return\nhttps://tsdoc.org/pages/tags/returns/\n"
+	},
+	"@return.promise": {
+		"prefix": ["@return.promise"],
+		"body": ["@return {Promise<${1:TYPE}>} ${2:description}"],
+		"description": "syntax: `@return <type> [description]`\n"
 	},
 	"@return property": {
 		"prefix": ["@return.property"],
 		"body": ["@property {${1:TYPE}} ${2:property} - ${3:description}"],
-		"description": "If return Object, use `@property <type> <property> [description]` for each properties."
+		"description": "If return Object, use `@property <type> <property> [description]` for each properties.\n"
+	},
+  "@return (single)": {
+		"prefix": ["@return"],
+		"body": ["/**", " *@return {${1:TYPE}} ${2:description}", " */"],
+		"description": "syntax: `@return <type> [description]`\nUsed to document the return value for a function.\nhttps://esdoc.org/manual/tags.html#-return\nhttps://tsdoc.org/pages/tags/returns/\n"
 	},
 	"@requires": {
 		"prefix": ["@requires"],
-		"body": ["@requires {${1:module}} - ${2:description}"],
-		"description": "syntax: `@requires <someModuleName>`"
-	},
-	"@abstract": {
-		"prefix": ["@abstract"],
-		"body": [
-			"/**",
-			" * this method must be overridden by sub class.",
-			" * @abstract",
-			" */"
-		],
-		"description": "syntax: `@abstract`"
-	},
-	"@emits": {
-		"prefix": ["@emits"],
-		"body": ["/**", " * @emits {${1:MyEvent}} ${2:emit event when ...}", " */"],
-		"description": "syntax: `@emits <identifier> [description]`"
-	},
-	"@listens": {
-		"prefix": ["@listens"],
-		"body": [
-			"/**",
-			" * @listens {${1:MyEvent}} ${2:listen event because ...}",
-			" */"
-		],
-		"description": "syntax: `@listens <identifier> [description]`"
-	},
-	"@override": {
-		"prefix": ["@override"],
-		"body": ["/**", " * @override", " */"],
-		"description": "syntax: `@override`"
-	},
-	"@throws": {
-		"prefix": ["@throws"],
-		"body": [
-			"/**",
-			" * @throws {${1:MyError}} ${2:throw error when ...}",
-			" */"
-		],
-		"description": "syntax: `@throws <identifier> [description]`"
+		"body": ["@requires ${1:module}"],
+		"description": "syntax: `@requires <someModuleName>`\nThis file requires a JavaScript module.\nhttps://jsdoc.app/tags-requires.html\n"
 	}
 }

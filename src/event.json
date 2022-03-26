@@ -1,0 +1,25 @@
+{
+  "@emits": {
+		"prefix": ["@emits"],
+		"body": ["/**", " * @emits {${1:MyEvent}} ${2:emit event when ...}", " */"],
+		"description": "syntax: `@emits <identifier> [description]`\nhttps://esdoc.org/manual/tags.html#-emits\n"
+	},
+	"@listens": {
+		"prefix": ["@listens"],
+		"body": [
+			"/**",
+			" * @listens {${1:MyEvent}} ${2:listen event because ...}",
+			" */"
+		],
+		"description": "syntax: `@listens <identifier> [description]`\n"
+	},
+  "@throws": {
+		"prefix": ["@throws"],
+		"body": [
+			"/**",
+			" * @throws {${1:MyError}} ${2:throw error when ...}",
+			" */"
+		],
+		"description": "syntax: `@throws <identifier> [description]`\n"
+	}
+}
