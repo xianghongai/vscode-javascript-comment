@@ -73,18 +73,18 @@
 |------------------------------------------|------------------------------------------------------|
 | `@param` →                               | `@param {TYPE} param - description`                  |
 | `@param.property` →                      | `@param {?TYPE} param.name - description`            |
-| `@param.any`        `@paa` →             | `@param {\*} param - description`                    |
-| `@param.object`     `@pao`,    `@ppo` →  | `@param {Object} param - description`                |
-| `@param.array`      `@paar`,   `@ppar` → | `@param {Object[]} param - description`              |
-| `@param.string`     `@pas`,    `@pps` →  | `@param {string} param - description`                |
-| `@param.number`     `@panu`,    `@ppn` → | `@param {number} param - description`                |
-| `@param.boolean`    `@pab`,    `@ppb` →  | `@param {boolean} param - description`               |
-| `@param.Function`   `@paf`,    `@ppf` →  | `@param {Function} param - description`              |
-| `@param.DOMElement` `@pad`,    `@ppd` →  | `@param {DOMElement} param - description`            |
-| `@param.Node`       `@pan`, `@ppnode` →  | `@param {Node} param - description`                  |
-| `@param.NodeList`   `@panl`,   `@ppnl` → | `@param {NodeList} param - description`              |
-| `@param.RegExp`     `@pare`,   `@ppre` → | `@param {RegExp} param - description`                |
-| `@param.generics`   `@pag`,    `@ppg` →  | `@param {GenericIdentity<Type>} param - description` |
+| `@param.any` / `@paa` / →                | `@param {\*} param - description`                    |
+| `@param.object` / `@pao`, / `@ppo` →     | `@param {Object} param - description`                |
+| `@param.array` / `@paar`, / `@ppar` →    | `@param {Object[]} param - description`              |
+| `@param.string` / `@pas`, / `@pps` →     | `@param {string} param - description`                |
+| `@param.number` / `@panu`, / `@ppn` →    | `@param {number} param - description`                |
+| `@param.boolean` / `@pab`, / `@ppb` →    | `@param {boolean} param - description`               |
+| `@param.Function` / `@paf`, / `@ppf` →   | `@param {Function} param - description`              |
+| `@param.DOMElement` / `@pad`, / `@ppd` → | `@param {DOMElement} param - description`            |
+| `@param.Node` / `@pan`, / `@ppnode` →    | `@param {Node} param - description`                  |
+| `@param.NodeList` / `@panl`, / `@ppnl` → | `@param {NodeList} param - description`              |
+| `@param.RegExp` / `@pare`, / `@ppre` →   | `@param {RegExp} param - description`                |
+| `@param.generics` / `@pag`, / `@ppg` →   | `@param {GenericIdentity<Type>} param - description` |
 | `@type` →                                | `@type {TYPE} - description`                         |
 | `@typedef` →                             | `@typedef {TYPE} Name - description`                 |
 | `@typeParam` →                           | `@typeParam {TYPE} Name - description`               |
