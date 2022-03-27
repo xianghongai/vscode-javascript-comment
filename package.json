@@ -4,7 +4,7 @@
 	"displayName": "JavaScript Comment Snippet",
 	"description": "Comment snippets for JavaScript",
 	"icon": "art/icon.png",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"galleryBanner": {
 		"color": "#ffffff",
 		"theme": "dark"
@@ -53,10 +53,6 @@
 			},
 			{
 				"language": "vue",
-				"path": "./snippets/javascript.json"
-			},
-			{
-				"language": "markdown",
 				"path": "./snippets/javascript.json"
 			}
 		]
