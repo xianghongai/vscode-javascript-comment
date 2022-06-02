@@ -1,62 +1,68 @@
 {
 	"@property": {
 		"prefix": ["@property"],
-		"body": [ "@property {${1:TYPE}} ${2:property} - ${3:description}\n* " ],
+		"body": ["@property {${1:TYPE}} ${2:property} - ${3:description}\n* "],
 		"description": "syntax: `@property <type> <name> [-] [description]`;\nsynonyms: @prop;\n- Nullable: `@property {?number} property - desc`, \n- Not Nullable: `@property {!Object} property - desc`\n- Union: `@property {number|string} property - desc`\n- Nullable and Union: `@property {?(number|string)} property - desc`\n- Spread: `@property {...number} property - desc`\n- Optional: `@property {number} [property]`\n- Default: `@property {number} [property=10]`\n- Function: `@property {function(foo: number, bar: string): boolean} property - desc`\n- Generics: `@property {Map<number, string>} property - desc`\n- Record: `@property {{foo: ?number, bar: string}} property - desc`\ndocument a list of static properties of a class, namespace or other object (@type, @typedef, @return).\nhttps://jsdoc.app/tags-property.html\n"
 	},
 	"@property is an Object": {
 		"prefix": ["@property.object"],
-		"body": [ "@property {Object} ${1:property} - ${2:description}\n* " ],
-		"description": "property is an Object\n"
+		"body": ["@property {Object} ${1:type}.${2:property} - ${3:description}"],
+		"description": "type property is an Object\n"
 	},
 	"@property is an Array": {
 		"prefix": ["@property.array"],
-		"body": [ "@property {${4:Object}[]} ${1:property} - ${2:description}\n* " ],
-		"description": "property is an Array\n"
+		"body": [
+			"@property {${3:Object}[]} ${1:type}.${2:property} - ${4:description}"
+		],
+		"description": "type property is an Array\n"
 	},
 	"@property is a string": {
 		"prefix": ["@property.string"],
-		"body": [ "@property {string} ${1:property} - ${2:description}\n* " ],
-		"description": "property is a string\n"
+		"body": ["@property {string} ${1:type}.${2:property} - ${3:description}"],
+		"description": "type property is a string\n"
 	},
 	"@property is a number": {
 		"prefix": ["@property.number"],
-		"body": [ "@property {number} ${1:property} - ${2:description}\n* " ],
-		"description": "property is a number\n"
+		"body": ["@property {number} ${1:type}.${2:property} - ${3:description}"],
+		"description": "type property is a number\n"
 	},
 	"@property is a boolean": {
 		"prefix": ["@property.boolean"],
-		"body": [ "@property {boolean} ${1:property} - ${2:description}\n* " ],
-		"description": "property is a boolean\n"
+		"body": ["@property {boolean} ${1:type}.${2:property} - ${3:description}"],
+		"description": "type property is a boolean\n"
 	},
 	"@property is a Function": {
 		"prefix": ["@property.function"],
-		"body": [ "@property {Function} ${1:property} - ${2:description}\n* " ],
-		"description": "property is a Function\n"
+		"body": ["@property {Function} ${1:type}.${2:property} - ${3:description}"],
+		"description": "type property is a Function\n"
 	},
 	"@property is a DOMElement": {
 		"prefix": ["@property.DOMElement"],
-		"body": [ "@property {DOMElement} ${1:property} - ${2:description}\n* " ],
-		"description": "property is a DOM element\n"
+		"body": [
+			"@property {DOMElement} ${1:type}.${2:property} - ${3:description}"
+		],
+		"description": "type property is a DOM element\n"
 	},
 	"@property is a Node": {
 		"prefix": ["@property.Node"],
-		"body": [ "@property {Node} ${1:property} - ${2:description}\n* " ],
-		"description": "property is a DOM node\n"
+		"body": ["@property {Node} ${1:type}.${2:property} - ${3:description}"],
+		"description": "type property is a DOM node\n"
 	},
 	"@property is a NodeList": {
 		"prefix": ["@property.NodeList"],
-		"body": [ "@property {NodeList} ${1:property} - ${2:description}\n* " ],
-		"description": "property is a an array of nodes or NodeList\n"
+		"body": ["@property {NodeList} ${1:type}.${2:property} - ${3:description}"],
+		"description": "type property is an array of nodes or NodeList\n"
 	},
 	"@property is a RegExp": {
 		"prefix": ["@property.RegExp"],
-		"body": [ "@property {RegExp} ${1:property} - ${2:description}\n* " ],
-		"description": "property is a RegExp\n"
+		"body": ["@property {RegExp} ${1:type}.${2:property} - ${3:description}"],
+		"description": "type property is a RegExp\n"
 	},
 	"@property is a Generics": {
 		"prefix": ["@property.generics"],
-		"body": [ "@property {${1:Array}<${2:string}>} ${3:property} - ${4:description}\n* " ],
-		"description": "property is a Generics Type\n"
+		"body": [
+			"@property {${1:Array}<${2:string}>} ${3:type}.${4:property} - ${5:description}"
+		],
+		"description": "type property is a Generics Type\n"
 	}
 }

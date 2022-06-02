@@ -1,4 +1,9 @@
 {
+	"@param property": {
+		"prefix": ["@param property"],
+		"body": ["@param {${1:TYPE}} ${2:param} - ${3:description}\n* "],
+		"description": "syntax: `@param <type> <name> [-] [description]`;\nsynonyms: @prop;\n- Nullable: `@param {?number} param - desc`, \n- Not Nullable: `@param {!Object} param - desc`\n- Union: `@param {number|string} param - desc`\n- Nullable and Union: `@param {?(number|string)} param - desc`\n- Spread: `@param {...number} param - desc`\n- Optional: `@param {number} [param]`\n- Default: `@param {number} [param=10]`\n- Function: `@param {function(foo: number, bar: string): boolean} param - desc`\n- Generics: `@param {Map<number, string>} param - desc`\n- Record: `@param {{foo: ?number, bar: string}} param - desc`\ndocument a list of static properties of a class, namespace or other object (@type, @typedef, @return).\nhttps://jsdoc.app/tags-property.html\n"
+	},
 	"@param property is an Object": {
 		"prefix": ["@param.property.object"],
 		"body": ["@param {Object} ${1:param}.${2:property} - ${3:description}"],
@@ -6,7 +11,9 @@
 	},
 	"@param property is an Array": {
 		"prefix": ["@param.property.array"],
-		"body": ["@param {${3:Object}[]} ${1:param}.${2:property} - ${4:description}"],
+		"body": [
+			"@param {${3:Object}[]} ${1:param}.${2:property} - ${4:description}"
+		],
 		"description": "parameter property is an Array\n"
 	},
 	"@param property is a string": {
@@ -51,7 +58,9 @@
 	},
 	"@param property is a Generics": {
 		"prefix": ["@param.property.generics"],
-		"body": ["@param {${1:Array}<${2:string}>} ${3:param}.${4:property} - ${5:description}"],
+		"body": [
+			"@param {${1:Array}<${2:string}>} ${3:param}.${4:property} - ${5:description}"
+		],
 		"description": "parameter property is a Generics Type\n"
 	}
 }

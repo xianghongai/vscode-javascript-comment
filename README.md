@@ -69,6 +69,8 @@ Then use the following categories to add specific annotation content.
 
 ### Type Syntax
 
+#### For Param
+
 | prefix                                  | body                                                 |
 |-----------------------------------------|------------------------------------------------------|
 | `@param` →                              | `@param {TYPE} param - description`                  |
@@ -85,11 +87,23 @@ Then use the following categories to add specific annotation content.
 | `@param.NodeList` / `@panl` / `@ppnl` → | `@param {NodeList} param - description`              |
 | `@param.RegExp` / `@pare` / `@ppre` →   | `@param {RegExp} param - description`                |
 | `@param.generics` / `@pag` / `@ppg` →   | `@param {GenericIdentity<Type>} param - description` |
-| `@type` →                               | `@type {TYPE} - description`                         |
-| `@typedef` →                            | `@typedef {TYPE} Name - description`                 |
-| `@typeParam` →                          | `@typeParam {TYPE} Name - description`               |
 
-### `@type`, `@typedef`, `@return` properties
+#### For Member And Variable
+
+| prefix               | body                                               |
+|----------------------|----------------------------------------------------|
+| `@typeParam` →       | `@typeParam {TYPE} Name - description`, (* TS Doc) |
+| `@type` →            | `@type {TYPE} - description`                       |
+| `@type.boolean` →    | `@type {boolean} type - description`               |
+| `@type.Object` →     | `@type {Object} type - description`                |
+| `@type.string` →     | `@type {string} type - description`                |
+| `@type.number` →     | `@type {number} type - description`                |
+| `@type.boolean` →    | `@type {boolean} type - description`               |
+| `@type.Function` →   | `@type {Function} type - description`              |
+| `@type.DOMElement` → | `@type {DOMElement} type - description`            |
+| `@type.Node` →       | `@type {Node} type - description`                  |
+| `@type.NodeList` →   | `@type {NodeList} type - description`              |
+| `@type.RegExp` →     | `@type {RegExp} type - description`                |
 
 | prefix                   | body                                            |
 |--------------------------|-------------------------------------------------|
@@ -105,6 +119,61 @@ Then use the following categories to add specific annotation content.
 | `@property.NodeList` →   | `@property {NodeList} property - description`   |
 | `@property.RegExp` →     | `@property {RegExp} property - description`     |
 
+Example:
+
+```js
+class MyClass {
+  constructor() {
+    /**
+     * @type {number}
+     */
+    this.foo = 123;
+
+    /**
+     * @type {Object}
+     * @property {number} p.foo
+     * @property {string} p.bar
+     */
+    this.bar = { foo: 123, bar: 'abc' };
+  }
+
+  /** @type {string} */
+  get baz() {}
+
+  /** @type {string} */
+  set baz(v) {}
+
+  /**
+   * @param {number} param - this is p description.
+   * @return {Object} this is description.
+   * @property {number} foo this is description.
+   * @property {number} bar this is description.
+   */
+  qux(param) {}
+}
+```
+
+#### For Virtual Type
+
+| prefix       | body                                 |
+|--------------|--------------------------------------|
+| `@typedef` → | `@typedef {TYPE} Name - description` |
+
+Example:
+
+```js
+/**
+ * A number, or a string containing a number.
+ * @typedef {(number|string)} NumberLike
+ */
+
+/**
+ * Set the magic number.
+ * @param {NumberLike} x - The magic number.
+ */
+function setMagicNumber(x) { }
+```
+
 ### Function
 
 | prefix                    | body                                                                                        |
@@ -116,6 +185,48 @@ Then use the following categories to add specific annotation content.
 | `@emits` →                | `/** @emits {eventName} emit event when ... */`                                             |
 | `@listens` →              | `/** @listens {eventName} listen event because ... */`                                      |
 | `@throws` →               | `/** @throws {errorType} Will throw an error if argument is null./Argument x must be x. */` |
+
+Example:
+
+```js
+/**
+ * function description
+ * @param {Object} param - this is object param.
+ * @param {number} param.foo - this is property param.
+ * @param {string} param.bar - this is property param.
+ */
+function myFunc(param) {}
+
+/**
+ * function description
+ * @param {{foo: number, bar: string}} param - this is object param.
+ */
+function myFunc(param) {}
+
+/**
+ * function description
+ * @param {{foo: ?number, bar: string}} param - this is nullable property.
+ */
+function myFunc(param) {}
+
+/**
+ * function description
+ * @param {{foo: number, bar: string}} param - this is object destructuring..
+ */
+function myFunc({ foo, bar }) {}
+
+/**
+ * @param {number} [param] - this is optional param.
+ * @param {number} [param=10] - this is default param.
+ * @param {?number} param - this is nullable param.
+ * @param {!Object} param - this is not nullable param.
+ * @param {?(number|string)} param - this is nullable and union param.
+ * @param {function(foo: number, bar: string): boolean} param - this is function param.
+ * @param {Array<string>} param - this is Array param.
+ * @param {Map<number, string>} param - this is Map param.
+ */
+function myFunc(param) {}
+```
 
 ### Class
 

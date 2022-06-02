@@ -1,0 +1,77 @@
+{
+	"@typeParam": {
+		"prefix": ["@typeParam"],
+		"body": ["@typeParam {${1:TYPE}} - ${2:description}"],
+		"description": "syntax: `@typeParam <type>`;\nhttps://tsdoc.org/pages/tags/typeparam/\n"
+	},
+	"@type": {
+		"prefix": ["@type"],
+		"body": ["@type {${1:TYPE}} ${2:type} - ${3:description}"],
+		"description": "syntax: `@type <type> <name> [-] [description]`;\nsynonyms: @arg, @argument;\n- Nullable: `@type {?number} type`, \n- Not Nullable: `@type {!Object} type`\n- Union: `@type {number|string} type`\n- Nullable and Union: `@type {?(number|string)} type`\n- Spread: `@type {...number} type`\n- Optional: `@type {number} [type]`\n- Default: `@type {number} [type=10]`\n- Function: `@type {function(foo: number, bar: string): boolean} type`\n- Generics: `@type {Map<number, string>} type`\n- Record: `@type {{foo: ?number, bar: string}} type`\nhttps://tsdoc.org/pages/tags/type/\nhttps://esdoc.org/manual/tags.html#type-syntax\nhttps://jsdoc.app/tags-type.html\n"
+	},
+	"@type is any type": {
+		"prefix": ["@type.any"],
+		"body": ["@type {*} ${1:type} - ${2:description}"],
+		"description": "parameter is any type\n"
+	},
+	"@type is an Object": {
+		"prefix": ["@type.object"],
+		"body": ["@type {Object} ${1:type} - ${2:description}"],
+		"description": "parameter is an Object\n"
+	},
+	"@type is an Array": {
+		"prefix": ["@type.array"],
+		"body": ["@type {${3:Object}[]} ${1:type} - ${2:description}"],
+		"description": "parameter is Array\n"
+	},
+	"@type is a string": {
+		"prefix": ["@type.string"],
+		"body": ["@type {string} ${1:type} - ${2:description}"],
+		"description": "parameter is a string\n"
+	},
+	"@type is a number": {
+		"prefix": ["@type.number"],
+		"body": ["@type {number} ${1:type} - ${2:description}"],
+		"description": "parameter is a number\n"
+	},
+	"@type is a boolean": {
+		"prefix": ["@type.boolean"],
+		"body": ["@type {boolean} ${1:type} - ${2:description}"],
+		"description": "parameter is a boolean\n"
+	},
+	"@type is a Function": {
+		"prefix": ["@type.function"],
+		"body": ["@type {Function} ${1:type} - ${2:description}"],
+		"description": "parameter is a Function\n"
+	},
+	"@type is a DOMElement": {
+		"prefix": ["@type.DOMElement"],
+		"body": ["@type {DOMElement} ${1:type} - ${2:description}"],
+		"description": "parameter is a DOM element\n"
+	},
+	"@type is a Node": {
+		"prefix": ["@type.Node"],
+		"body": ["@type {Node} ${1:type} - ${2:description}"],
+		"description": "parameter is a DOM node\n"
+	},
+	"@type is a NodeList": {
+		"prefix": ["@type.NodeList"],
+		"body": ["@type {NodeList} ${1:type} - ${2:description}"],
+		"description": "parameter is an array of nodes or NodeList\n"
+	},
+	"@type is a RegExp": {
+		"prefix": ["@type.RegExp"],
+		"body": ["@type {RegExp} ${1:type} - ${2:description}"],
+		"description": "parameter is a RegExp\n"
+	},
+	"@type is a Generics": {
+		"prefix": ["@type.generics"],
+		"body": ["@type {${1:Array}<${2:string}>} ${3:type} - ${4:description}"],
+		"description": "parameter is a Generics Type\n"
+	},
+	"@type (single)": {
+		"prefix": ["@type"],
+		"body": ["/**", " * @type {${1:TYPE}} ${2:type} - ${3:description}", "*/"],
+		"description": "syntax: `@type <type> <name> [-] [description]`;\nsynonyms: @arg, @argument;\n- Nullable: `@type {?number} type`, \n- Not Nullable: `@type {!Object} type`\n- Union: `@type {number|string} type`\n- Nullable and Union: `@type {?(number|string)} type`\n- Spread: `@type {...number} type`\n- Optional: `@type {number} [type]`\n- Default: `@type {number} [type=10]`\n- Function: `@type {function(foo: number, bar: string): boolean} type`\n- Generics: `@type {Map<number, string>} type`\n- Record: `@type {{foo: ?number, bar: string}} type`\nhttps://tsdoc.org/pages/tags/type/\nhttps://esdoc.org/manual/tags.html#type-syntax\nhttps://jsdoc.app/tags-type.html"
+	}
+}

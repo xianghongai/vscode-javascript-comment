@@ -4,7 +4,7 @@
 	"displayName": "JavaScript Comment Snippet",
 	"description": "Comment snippets for JavaScript",
 	"icon": "art/icon.png",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"galleryBanner": {
 		"color": "#ffffff",
 		"theme": "dark"
