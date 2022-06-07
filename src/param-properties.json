@@ -1,8 +1,8 @@
 {
 	"@param property": {
 		"prefix": ["@param property"],
-		"body": ["@param {${1:TYPE}} ${2:param} - ${3:description}\n* "],
-		"description": "syntax: `@param <type> <name> [-] [description]`;\nsynonyms: @prop;\n- Nullable: `@param {?number} param - desc`, \n- Not Nullable: `@param {!Object} param - desc`\n- Union: `@param {number|string} param - desc`\n- Nullable and Union: `@param {?(number|string)} param - desc`\n- Spread: `@param {...number} param - desc`\n- Optional: `@param {number} [param]`\n- Default: `@param {number} [param=10]`\n- Function: `@param {function(foo: number, bar: string): boolean} param - desc`\n- Generics: `@param {Map<number, string>} param - desc`\n- Record: `@param {{foo: ?number, bar: string}} param - desc`\ndocument a list of static properties of a class, namespace or other object (@type, @typedef, @return).\nhttps://jsdoc.app/tags-property.html\n"
+		"body": ["@param {${1:TYPE}} ${2:param}.${3:property} - ${4:description}\n* "],
+		"description": "syntax: `@param {type} <type>.<name> [-] [description]`;\nsynonyms: @prop;\n- Nullable: `@param {?number} param - desc`, \n- Not Nullable: `@param {!Object} param - desc`\n- Union: `@param {number|string} param - desc`\n- Nullable and Union: `@param {?(number|string)} param - desc`\n- Spread: `@param {...number} param - desc`\n- Optional: `@param {number} [param]`\n- Default: `@param {number} [param=10]`\n- Function: `@param {function(foo: number, bar: string): boolean} param - desc`\n- Generics: `@param {Map<number, string>} param - desc`\n- Record: `@param {{foo: ?number, bar: string}} param - desc`\ndocument a list of static properties of a class, namespace or other object (@type, @typedef, @return).\nhttps://jsdoc.app/tags-property.html\n"
 	},
 	"@param property is an Object": {
 		"prefix": ["@param.property.object"],

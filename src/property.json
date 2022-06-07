@@ -1,8 +1,8 @@
 {
 	"@property": {
 		"prefix": ["@property"],
-		"body": ["@property {${1:TYPE}} ${2:property} - ${3:description}\n* "],
-		"description": "syntax: `@property <type> <name> [-] [description]`;\nsynonyms: @prop;\n- Nullable: `@property {?number} property - desc`, \n- Not Nullable: `@property {!Object} property - desc`\n- Union: `@property {number|string} property - desc`\n- Nullable and Union: `@property {?(number|string)} property - desc`\n- Spread: `@property {...number} property - desc`\n- Optional: `@property {number} [property]`\n- Default: `@property {number} [property=10]`\n- Function: `@property {function(foo: number, bar: string): boolean} property - desc`\n- Generics: `@property {Map<number, string>} property - desc`\n- Record: `@property {{foo: ?number, bar: string}} property - desc`\ndocument a list of static properties of a class, namespace or other object (@type, @typedef, @return).\nhttps://jsdoc.app/tags-property.html\n"
+		"body": ["@property {${1:TYPE}} ${2:type}.${3:property} - ${4:description}\n* "],
+		"description": "syntax: `@property {type} <type>.<name> [-] [description]`;\nsynonyms: @prop;\n- Nullable: `@property {?number} property - desc`, \n- Not Nullable: `@property {!Object} property - desc`\n- Union: `@property {number|string} property - desc`\n- Nullable and Union: `@property {?(number|string)} property - desc`\n- Spread: `@property {...number} property - desc`\n- Optional: `@property {number} [property]`\n- Default: `@property {number} [property=10]`\n- Function: `@property {function(foo: number, bar: string): boolean} property - desc`\n- Generics: `@property {Map<number, string>} property - desc`\n- Record: `@property {{foo: ?number, bar: string}} property - desc`\ndocument a list of static properties of a class, namespace or other object (@type, @typedef, @return).\nhttps://jsdoc.app/tags-property.html\n"
 	},
 	"@property is an Object": {
 		"prefix": ["@property.object"],
