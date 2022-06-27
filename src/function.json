@@ -22,5 +22,10 @@
 		"prefix": ["@requires"],
 		"body": ["@requires ${1:module}"],
 		"description": "syntax: `@requires <someModuleName>`;\nThis file requires a JavaScript module.\nhttps://jsdoc.app/tags-requires.html\n"
+	},
+  "@this": {
+		"prefix": ["@this"],
+		"body": ["@this ${1:{${2:TYPE}\\} }${3:description}"],
+		"description": "syntax: `@this <type> [description]`;\nUsed to indicate what the this keyword refers to when used within another symbol.\nhttps://jsdoc.app/tags-this.html\n"
 	}
 }
