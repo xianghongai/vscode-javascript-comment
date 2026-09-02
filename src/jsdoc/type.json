@@ -1,0 +1,110 @@
+{
+	"@type": {
+		"prefix": "@type",
+		"body": ["@type {${1:TYPE}}"],
+		"description": "The type of a variable or expression.\n`@type` takes a type expression only — no name, no description; the name comes from the declaration.\nhttps://jsdoc.app/tags-type\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@type is any type": {
+		"prefix": "@type.any",
+		"body": ["@type {*}"],
+		"description": "Typed as `*`.\nhttps://jsdoc.app/tags-type\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@type is an Object": {
+		"prefix": "@type.object",
+		"body": ["@type {Object}"],
+		"description": "Typed as `Object`.\nhttps://jsdoc.app/tags-type\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@type is a string": {
+		"prefix": "@type.string",
+		"body": ["@type {string}"],
+		"description": "Typed as `string`.\nhttps://jsdoc.app/tags-type\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@type is a number": {
+		"prefix": "@type.number",
+		"body": ["@type {number}"],
+		"description": "Typed as `number`.\nhttps://jsdoc.app/tags-type\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@type is a boolean": {
+		"prefix": "@type.boolean",
+		"body": ["@type {boolean}"],
+		"description": "Typed as `boolean`.\nhttps://jsdoc.app/tags-type\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@type is a Function": {
+		"prefix": "@type.function",
+		"body": ["@type {Function}"],
+		"description": "Typed as `Function`.\nhttps://jsdoc.app/tags-type\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@type is an HTMLElement": {
+		"prefix": "@type.HTMLElement",
+		"body": ["@type {HTMLElement}"],
+		"description": "Typed as `HTMLElement`.\nhttps://jsdoc.app/tags-type\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@type is a Node": {
+		"prefix": "@type.Node",
+		"body": ["@type {Node}"],
+		"description": "Typed as `Node`.\nhttps://jsdoc.app/tags-type\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@type is a NodeList": {
+		"prefix": "@type.NodeList",
+		"body": ["@type {NodeList}"],
+		"description": "Typed as `NodeList`.\nhttps://jsdoc.app/tags-type\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@type is a RegExp": {
+		"prefix": "@type.RegExp",
+		"body": ["@type {RegExp}"],
+		"description": "Typed as `RegExp`.\nhttps://jsdoc.app/tags-type\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@type is an Array": {
+		"prefix": "@type.array",
+		"body": ["@type {${1:Object}[]}"],
+		"description": "An array type.\nhttps://jsdoc.app/tags-type\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@type is a Generic": {
+		"prefix": "@type.generic",
+		"body": ["@type {${1:Map}<${2:string}, ${3:number}>}"],
+		"description": "A generic type.\nhttps://jsdoc.app/tags-type\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@typedef": {
+		"prefix": "@typedef",
+		"body": ["@typedef {${1:TYPE}} ${2:Name}"],
+		"description": "Give a name to a type so it can be reused.\nhttps://jsdoc.app/tags-typedef\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@typedef object": {
+		"prefix": "@typedef.object",
+		"body": ["/**", " * @typedef {Object} ${1:Name}", " * @property {${2:TYPE}} ${3:name} - ${4:description}", " */"],
+		"description": "A named object type, with its members described by `@property`.\nhttps://jsdoc.app/tags-typedef\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@template": {
+		"prefix": "@template",
+		"body": ["@template ${1:T}"],
+		"description": "Declare a type parameter for a generic function or class. Supported by TypeScript in checkJs.\nhttps://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@callback": {
+		"prefix": "@callback",
+		"body": [
+			"/**",
+			" * @callback ${1:Name}",
+			" * @param {${2:TYPE}} ${3:name} - ${4:description}",
+			" * @returns {${5:TYPE}}",
+			" */"
+		],
+		"description": "Describe a callback function signature so it can be referenced as a type.\nhttps://jsdoc.app/tags-callback\n",
+		"scope": "vue,javascript,javascriptreact"
+	}
+}

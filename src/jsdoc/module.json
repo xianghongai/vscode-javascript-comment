@@ -1,0 +1,32 @@
+{
+	"@module": {
+		"prefix": "@module",
+		"body": ["/** @module ${1:moduleName} */"],
+		"description": "Mark the file as a module.\nhttps://jsdoc.app/tags-module\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@external": {
+		"prefix": ["@external", "@host"],
+		"body": ["/**", " * ${1:description}", " *", " * @external ${2:Identifier}", " * @see ${3:URL}", " */"],
+		"description": "Document a symbol defined outside this project.\nhttps://jsdoc.app/tags-external\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@fires": {
+		"prefix": ["@fires", "@emits"],
+		"body": ["@fires ${1:EventName}"],
+		"description": "The event this method fires. JSDoc lists `@emits` as a synonym.\nhttps://jsdoc.app/tags-fires\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@listens": {
+		"prefix": "@listens",
+		"body": ["@listens ${1:EventName}"],
+		"description": "The event this symbol listens for.\nhttps://jsdoc.app/tags-listens\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@file": {
+		"prefix": ["@file", "@fileoverview", "@overview"],
+		"body": ["/**", " * @file ${1:description}", " */"],
+		"description": "Describe the file as a whole.\nhttps://jsdoc.app/tags-file\n",
+		"scope": "vue,javascript,javascriptreact"
+	}
+}

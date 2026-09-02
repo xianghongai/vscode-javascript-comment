@@ -1,0 +1,86 @@
+{
+	"@property": {
+		"prefix": ["@property", "@prop"],
+		"body": ["@property {${1:TYPE}} ${2:name} - ${3:description}"],
+		"description": "A member of an object or typedef. JSDoc lists `@prop` as a synonym.\nhttps://jsdoc.app/tags-property\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@property optional": {
+		"prefix": "@property.optional",
+		"body": ["@property {${1:TYPE}} [${2:name}] - ${3:description}"],
+		"description": "An optional member.\nhttps://jsdoc.app/tags-property\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@property is an Array": {
+		"prefix": "@property.array",
+		"body": ["@property {${1:Object}[]} ${2:name} - ${3:description}"],
+		"description": "An array member.\nhttps://jsdoc.app/tags-property\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@property is a Generic": {
+		"prefix": "@property.generic",
+		"body": ["@property {${1:Map}<${2:string}, ${3:number}>} ${4:name} - ${5:description}"],
+		"description": "A generic member.\nhttps://jsdoc.app/tags-property\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@property is any type": {
+		"prefix": "@property.any",
+		"body": ["@property {*} ${1:name} - ${2:description}"],
+		"description": "A member typed as `*`.\nhttps://jsdoc.app/tags-property\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@property is an Object": {
+		"prefix": "@property.object",
+		"body": ["@property {Object} ${1:name} - ${2:description}"],
+		"description": "A member typed as `Object`.\nhttps://jsdoc.app/tags-property\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@property is a string": {
+		"prefix": "@property.string",
+		"body": ["@property {string} ${1:name} - ${2:description}"],
+		"description": "A member typed as `string`.\nhttps://jsdoc.app/tags-property\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@property is a number": {
+		"prefix": "@property.number",
+		"body": ["@property {number} ${1:name} - ${2:description}"],
+		"description": "A member typed as `number`.\nhttps://jsdoc.app/tags-property\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@property is a boolean": {
+		"prefix": "@property.boolean",
+		"body": ["@property {boolean} ${1:name} - ${2:description}"],
+		"description": "A member typed as `boolean`.\nhttps://jsdoc.app/tags-property\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@property is a Function": {
+		"prefix": "@property.function",
+		"body": ["@property {Function} ${1:name} - ${2:description}"],
+		"description": "A member typed as `Function`.\nhttps://jsdoc.app/tags-property\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@property is an HTMLElement": {
+		"prefix": "@property.HTMLElement",
+		"body": ["@property {HTMLElement} ${1:name} - ${2:description}"],
+		"description": "A member typed as `HTMLElement`.\nhttps://jsdoc.app/tags-property\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@property is a Node": {
+		"prefix": "@property.Node",
+		"body": ["@property {Node} ${1:name} - ${2:description}"],
+		"description": "A member typed as `Node`.\nhttps://jsdoc.app/tags-property\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@property is a NodeList": {
+		"prefix": "@property.NodeList",
+		"body": ["@property {NodeList} ${1:name} - ${2:description}"],
+		"description": "A member typed as `NodeList`.\nhttps://jsdoc.app/tags-property\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@property is a RegExp": {
+		"prefix": "@property.RegExp",
+		"body": ["@property {RegExp} ${1:name} - ${2:description}"],
+		"description": "A member typed as `RegExp`.\nhttps://jsdoc.app/tags-property\n",
+		"scope": "vue,javascript,javascriptreact"
+	}
+}

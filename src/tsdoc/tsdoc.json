@@ -1,0 +1,158 @@
+{
+	"Block comment (TSDoc)": {
+		"prefix": "///",
+		"body": ["/**", " * ${0:description}", " */"],
+		"description": "An empty TSDoc block comment.\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@param (TSDoc)": {
+		"prefix": ["@param", "@arg", "@argument"],
+		"body": ["@param ${1:name} - ${2:description}"],
+		"description": "Document a parameter. TSDoc takes no type in braces — the type comes from the TypeScript signature.\nhttps://tsdoc.org/pages/tags/param/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@returns (TSDoc)": {
+		"prefix": ["@returns", "@return"],
+		"body": ["@returns ${1:description}"],
+		"description": "Document the return value. TSDoc uses `@returns`; there is no `@return`.\nhttps://tsdoc.org/pages/tags/returns/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@typeParam (TSDoc)": {
+		"prefix": "@typeParam",
+		"body": ["@typeParam ${1:T} - ${2:description}"],
+		"description": "Document a generic type parameter. The name is bare — no braces.\nhttps://tsdoc.org/pages/tags/typeparam/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@throws (TSDoc)": {
+		"prefix": "@throws",
+		"body": ["@throws ${1:description}"],
+		"description": "TSDoc standard tag.\nhttps://tsdoc.org/pages/tags/throws/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@remarks (TSDoc)": {
+		"prefix": "@remarks",
+		"body": ["@remarks", " * ${1:description}"],
+		"description": "The detailed part of a doc comment; everything before it is the summary.\nhttps://tsdoc.org/pages/tags/remarks/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@example (TSDoc)": {
+		"prefix": "@example",
+		"body": ["@example", " * ```${1:ts}", " * ${2:code}", " * ```", " * $0"],
+		"description": "TSDoc standard tag.\nhttps://tsdoc.org/pages/tags/example/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@defaultValue (TSDoc)": {
+		"prefix": "@defaultValue",
+		"body": ["@defaultValue ${1:value}"],
+		"description": "TSDoc standard tag.\nhttps://tsdoc.org/pages/tags/defaultvalue/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@deprecated (TSDoc)": {
+		"prefix": "@deprecated",
+		"body": ["@deprecated ${1:use Y instead}"],
+		"description": "TSDoc standard tag.\nhttps://tsdoc.org/pages/tags/deprecated/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@see (TSDoc)": {
+		"prefix": "@see",
+		"body": ["@see ${1:{@link OtherSymbol\\}}"],
+		"description": "TSDoc standard tag.\nhttps://tsdoc.org/pages/tags/see/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@link (TSDoc)": {
+		"prefix": "@link",
+		"body": ["{@link ${1:Symbol}${2:|${3:link text}}}"],
+		"description": "TSDoc standard tag.\nhttps://tsdoc.org/pages/tags/link/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@label (TSDoc)": {
+		"prefix": "@label",
+		"body": ["@label ${1:LABEL_NAME}"],
+		"description": "TSDoc standard tag.\nhttps://tsdoc.org/pages/tags/label/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@inheritDoc (TSDoc)": {
+		"prefix": "@inheritDoc",
+		"body": ["@inheritDoc ${1:{@link OtherSymbol\\}}"],
+		"description": "TSDoc standard tag.\nhttps://tsdoc.org/pages/tags/inheritdoc/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@privateRemarks (TSDoc)": {
+		"prefix": "@privateRemarks",
+		"body": ["@privateRemarks", " * ${1:description}"],
+		"description": "TSDoc standard tag.\nhttps://tsdoc.org/pages/tags/privateremarks/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@packageDocumentation (TSDoc)": {
+		"prefix": "@packageDocumentation",
+		"body": ["/**", " * ${1:description}", " *", " * @packageDocumentation", " */"],
+		"description": "TSDoc standard tag.\nhttps://tsdoc.org/pages/tags/packagedocumentation/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@decorator (TSDoc)": {
+		"prefix": "@decorator",
+		"body": ["@decorator ${1:`@decoratorName()`}"],
+		"description": "TSDoc standard tag.\nhttps://tsdoc.org/pages/tags/decorator/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@alpha (TSDoc)": {
+		"prefix": "@alpha",
+		"body": ["@alpha"],
+		"description": "Modifier tag. Early preview — may change without notice.\nTSDoc standard tag.\nhttps://tsdoc.org/pages/tags/alpha/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@beta (TSDoc)": {
+		"prefix": "@beta",
+		"body": ["@beta"],
+		"description": "Modifier tag. Preview — not yet stable.\nTSDoc standard tag.\nhttps://tsdoc.org/pages/tags/beta/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@public (TSDoc)": {
+		"prefix": "@public",
+		"body": ["@public"],
+		"description": "Modifier tag. Part of the supported public API.\nTSDoc standard tag.\nhttps://tsdoc.org/pages/tags/public/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@internal (TSDoc)": {
+		"prefix": "@internal",
+		"body": ["@internal"],
+		"description": "Modifier tag. Not part of the public API.\nTSDoc standard tag.\nhttps://tsdoc.org/pages/tags/internal/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@experimental (TSDoc)": {
+		"prefix": "@experimental",
+		"body": ["@experimental"],
+		"description": "Modifier tag. Same meaning as `@beta`.\nTSDoc standard tag.\nhttps://tsdoc.org/pages/tags/experimental/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@eventProperty (TSDoc)": {
+		"prefix": "@eventProperty",
+		"body": ["@eventProperty"],
+		"description": "Modifier tag. The property returns an event object others can subscribe to.\nTSDoc standard tag.\nhttps://tsdoc.org/pages/tags/eventproperty/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@override (TSDoc)": {
+		"prefix": "@override",
+		"body": ["@override"],
+		"description": "Modifier tag. Overrides a member from the base class.\nTSDoc standard tag.\nhttps://tsdoc.org/pages/tags/override/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@sealed (TSDoc)": {
+		"prefix": "@sealed",
+		"body": ["@sealed"],
+		"description": "Modifier tag. Must not be extended or overridden.\nTSDoc standard tag.\nhttps://tsdoc.org/pages/tags/sealed/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@virtual (TSDoc)": {
+		"prefix": "@virtual",
+		"body": ["@virtual"],
+		"description": "Modifier tag. May be overridden by a subclass.\nTSDoc standard tag.\nhttps://tsdoc.org/pages/tags/virtual/\n",
+		"scope": "typescript,typescriptreact"
+	},
+	"@readonly (TSDoc)": {
+		"prefix": "@readonly",
+		"body": ["@readonly"],
+		"description": "Modifier tag. Treat as read-only regardless of the signature.\nTSDoc standard tag.\nhttps://tsdoc.org/pages/tags/readonly/\n",
+		"scope": "typescript,typescriptreact"
+	}
+}

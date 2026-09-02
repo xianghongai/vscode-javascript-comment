@@ -18,23 +18,23 @@
   </a>
 </p>
 
-[中文文档](./README-CN.md)
+[English](./README.md)
 
-Documentation comments triggered by `@`, so the tag names are one keystroke away instead of something to memorize.
+用 `@` 触发文档注释，标签名随手可得，不必去记。
 
 ![JavaScript Comment Snippet](https://user-images.githubusercontent.com/58411528/82288531-41d84e00-99d5-11ea-829c-cd6a70b2cc0e.gif)
 
-## Prefixes
+## 前缀清单
 
-1. **Type variants extend the tag with a dot.** `@param.string`, `@property.array`, `@type.generic`. Type `@param.` and the completion list lays out every shape.
-2. **Synonyms trigger the primary form.** JSDoc documents `@return`, `@desc`, `@emits`, `@virtual`, `@arg` as alternative spellings. Typing any of them finds the snippet; what gets inserted is the primary tag — `@returns`, `@description`, `@fires`, `@abstract`, `@param`.
-3. **`///` opens an empty block comment**, in either dialect.
+1. **类型变体以点号延伸。** `@param.string`、`@property.array`、`@type.generic`。打出 `@param.` 就能在补全列表里摊开全部形态。
+2. **同义写法触发规范形式。** JSDoc 把 `@return`、`@desc`、`@emits`、`@virtual`、`@arg` 列为另一种拼法。输入其中任意一个都能找到片段，插入的则是主标签：`@returns`、`@description`、`@fires`、`@abstract`、`@param`。
+3. **`///` 起一个空注释块**，两种规范下都可用。
 
-### Common
+### 通用
 
-Tags that apply to any symbol.
+适用于任何符号的标签。
 
-| Prefix         | Alias   | Inserts                                      |
+| 前缀           | 别名    | 插入内容                                     |
 | -------------- | ------- | -------------------------------------------- |
 | `///`          |         | `/**` …                                      |
 | `@description` | `@desc` | `@description description`                   |
@@ -49,11 +49,11 @@ Tags that apply to any symbol.
 | `@access`      |         | `@access public`                             |
 | `@license`     |         | `/**` …                                      |
 
-### Functions
+### 函数
 
-The `@param` family covers the shapes you hit daily; the per-type variants save typing the brace.
+`@param` 族覆盖日常会遇到的各种形态，按类型细分的变体可以省去手写花括号。
 
-| Prefix               | Alias               | Inserts                                           |
+| 前缀                 | 别名                | 插入内容                                          |
 | -------------------- | ------------------- | ------------------------------------------------- |
 | `@param`             | `@arg`, `@argument` | `@param {TYPE} name - description`                |
 | `@param.optional`    |                     | `@param {TYPE} [name] - description`              |
@@ -78,35 +78,35 @@ The `@param` family covers the shapes you hit daily; the per-type variants save 
 | `@this`              |                     | `@this {TYPE}`                                    |
 | `@requires`          |                     | `@requires moduleName`                            |
 
-### Types
+### 类型
 
-`@type` takes a type expression only — the name comes from the declaration it sits above.
+`@type` 只接受类型表达式，名字来自它所修饰的那条声明。
 
-| Prefix              | Alias | Inserts                       |
-| ------------------- | ----- | ----------------------------- |
-| `@type`             |       | `@type {TYPE}`                |
-| `@type.any`         |       | `@type {*}`                   |
-| `@type.object`      |       | `@type {Object}`              |
-| `@type.string`      |       | `@type {string}`              |
-| `@type.number`      |       | `@type {number}`              |
-| `@type.boolean`     |       | `@type {boolean}`             |
-| `@type.function`    |       | `@type {Function}`            |
-| `@type.HTMLElement` |       | `@type {HTMLElement}`         |
-| `@type.Node`        |       | `@type {Node}`                |
-| `@type.NodeList`    |       | `@type {NodeList}`            |
-| `@type.RegExp`      |       | `@type {RegExp}`              |
-| `@type.array`       |       | `@type {Object[]}`            |
-| `@type.generic`     |       | `@type {Map<string, number>}` |
-| `@typedef`          |       | `@typedef {TYPE} Name`        |
-| `@typedef.object`   |       | `/**` …                       |
-| `@template`         |       | `@template T`                 |
-| `@callback`         |       | `/**` …                       |
+| 前缀                | 别名 | 插入内容                      |
+| ------------------- | ---- | ----------------------------- |
+| `@type`             |      | `@type {TYPE}`                |
+| `@type.any`         |      | `@type {*}`                   |
+| `@type.object`      |      | `@type {Object}`              |
+| `@type.string`      |      | `@type {string}`              |
+| `@type.number`      |      | `@type {number}`              |
+| `@type.boolean`     |      | `@type {boolean}`             |
+| `@type.function`    |      | `@type {Function}`            |
+| `@type.HTMLElement` |      | `@type {HTMLElement}`         |
+| `@type.Node`        |      | `@type {Node}`                |
+| `@type.NodeList`    |      | `@type {NodeList}`            |
+| `@type.RegExp`      |      | `@type {RegExp}`              |
+| `@type.array`       |      | `@type {Object[]}`            |
+| `@type.generic`     |      | `@type {Map<string, number>}` |
+| `@typedef`          |      | `@typedef {TYPE} Name`        |
+| `@typedef.object`   |      | `/**` …                       |
+| `@template`         |      | `@template T`                 |
+| `@callback`         |      | `/**` …                       |
 
-### Object members
+### 对象成员
 
-`@property` describes the members of an object or a `@typedef`.
+`@property` 用于描述对象或 `@typedef` 的成员。
 
-| Prefix                  | Alias   | Inserts                                              |
+| 前缀                    | 别名    | 插入内容                                             |
 | ----------------------- | ------- | ---------------------------------------------------- |
 | `@property`             | `@prop` | `@property {TYPE} name - description`                |
 | `@property.optional`    |         | `@property {TYPE} [name] - description`              |
@@ -123,9 +123,9 @@ The `@param` family covers the shapes you hit daily; the per-type variants save 
 | `@property.NodeList`    |         | `@property {NodeList} name - description`            |
 | `@property.RegExp`      |         | `@property {RegExp} name - description`              |
 
-### Classes
+### 类
 
-| Prefix        | Alias          | Inserts                   |
+| 前缀          | 别名           | 插入内容                  |
 | ------------- | -------------- | ------------------------- |
 | `@class`      | `@constructor` | `/**` …                   |
 | `@extends`    | `@augments`    | `@extends {SuperClass}`   |
@@ -136,9 +136,9 @@ The `@param` family covers the shapes you hit daily; the per-type variants save 
 | `@readonly`   |                | `@readonly`               |
 | `@static`     |                | `@static`                 |
 
-### Modules and events
+### 模块与事件
 
-| Prefix      | Alias                        | Inserts                     |
+| 前缀        | 别名                         | 插入内容                    |
 | ----------- | ---------------------------- | --------------------------- |
 | `@module`   |                              | `/** @module moduleName */` |
 | `@external` | `@host`                      | `/**` …                     |
@@ -148,9 +148,9 @@ The `@param` family covers the shapes you hit daily; the per-type variants save 
 
 ### TSDoc
 
-These appear in `.ts` and `.tsx` only. TSDoc carries no type annotations — types come from the signature — and the set below is the complete list of standard tags.
+这些只在 `.ts` 与 `.tsx` 中出现。TSDoc 不带类型标注（类型由签名提供），下表即其标准标签的完整集合。
 
-| Prefix                  | Alias               | Inserts                            |
+| 前缀                    | 别名                | 插入内容                           |
 | ----------------------- | ------------------- | ---------------------------------- |
 | `///`                   |                     | `/**` …                            |
 | `@param`                | `@arg`, `@argument` | `@param name - description`        |
@@ -179,11 +179,11 @@ These appear in `.ts` and `.tsx` only. TSDoc carries no type annotations — typ
 | `@virtual`              |                     | `@virtual`                         |
 | `@readonly`             |                     | `@readonly`                        |
 
-## References
+## 官方依据
 
 - [JSDoc](https://jsdoc.app/) · [GitHub](https://github.com/jsdoc/jsdoc)
 - [TSDoc](https://tsdoc.org/) · [GitHub](https://github.com/microsoft/tsdoc)
-- [TypeScript: JSDoc reference](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html) — which JSDoc tags TypeScript understands in `checkJs`
-- [VS Code snippet syntax](https://code.visualstudio.com/docs/editing/userdefinedsnippets)
+- [TypeScript：JSDoc 支持范围](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)：`checkJs` 下 TypeScript 认得哪些 JSDoc 标签
+- [VS Code 片段语法](https://code.visualstudio.com/docs/editing/userdefinedsnippets)
 
-MIT licensed. See LICENSE.
+基于 MIT 协议开源，详见 LICENSE。

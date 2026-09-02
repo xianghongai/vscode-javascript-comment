@@ -1,7 +1,0 @@
-{
-	"@module": {
-		"prefix": "@module",
-		"body": ["/** @module ${1:moduleName} */"],
-		"description": "syntax: `@module [[{<type>}] <moduleName>]`;\nDocument a JavaScript module.\nhttps://jsdoc.app/tags-module.html\n"
-	}
-}

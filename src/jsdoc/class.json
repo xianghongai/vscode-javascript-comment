@@ -1,0 +1,50 @@
+{
+	"@class": {
+		"prefix": ["@class", "@constructor"],
+		"body": ["/**", " * ${1:description}", " *", " * @class", " */"],
+		"description": "Mark a function as a constructor. JSDoc lists `@constructor` as a synonym.\nhttps://jsdoc.app/tags-class\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@extends": {
+		"prefix": ["@extends", "@augments"],
+		"body": ["@extends {${1:SuperClass}}"],
+		"description": "The parent class. JSDoc documents this as `@augments`; `@extends` is the form TypeScript understands in checkJs, so it is what gets inserted.\nhttps://jsdoc.app/tags-augments\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@implements": {
+		"prefix": "@implements",
+		"body": ["@implements {${1:Interface}}"],
+		"description": "The interface this symbol implements.\nhttps://jsdoc.app/tags-implements\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@interface": {
+		"prefix": "@interface",
+		"body": ["/**", " * ${1:description}", " *", " * @interface", " */"],
+		"description": "Mark a symbol as an interface others can implement.\nhttps://jsdoc.app/tags-interface\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@abstract": {
+		"prefix": ["@abstract", "@virtual"],
+		"body": ["@abstract"],
+		"description": "The member must be overridden by a subclass. JSDoc lists `@virtual` as a synonym.\nhttps://jsdoc.app/tags-abstract\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@override": {
+		"prefix": "@override",
+		"body": ["@override"],
+		"description": "The member overrides one from the parent class.\nhttps://jsdoc.app/tags-override\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@readonly": {
+		"prefix": "@readonly",
+		"body": ["@readonly"],
+		"description": "The symbol is read-only.\nhttps://jsdoc.app/tags-readonly\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@static": {
+		"prefix": "@static",
+		"body": ["@static"],
+		"description": "The member is static.\nhttps://jsdoc.app/tags-static\n",
+		"scope": "vue,javascript,javascriptreact"
+	}
+}

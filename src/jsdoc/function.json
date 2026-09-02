@@ -1,0 +1,134 @@
+{
+	"@param": {
+		"prefix": ["@param", "@arg", "@argument"],
+		"body": ["@param {${1:TYPE}} ${2:name} - ${3:description}"],
+		"description": "Document a function parameter.\nJSDoc lists `@arg` / `@argument` as synonyms; this inserts the primary form.\n\nType syntax:\n- Nullable: `{?number}`   Non-nullable: `{!Object}`\n- Union: `{number|string}`   Any: `{*}`\n- Rest: `{...number}`   Optional: `[param]`   Default: `[param=10]`\n- Function: `{function(a: number): boolean}`\n- Generic: `{Map<number, string>}`   Record: `{{a: number, b: string}}`\nhttps://jsdoc.app/tags-param\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@param optional": {
+		"prefix": "@param.optional",
+		"body": ["@param {${1:TYPE}} [${2:name}] - ${3:description}"],
+		"description": "An optional parameter — the name goes in square brackets.\nhttps://jsdoc.app/tags-param\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@param with default": {
+		"prefix": "@param.default",
+		"body": ["@param {${1:TYPE}} [${2:name}=${3:defaultValue}] - ${4:description}"],
+		"description": "An optional parameter with a default value.\nhttps://jsdoc.app/tags-param\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@param is an Array": {
+		"prefix": "@param.array",
+		"body": ["@param {${1:Object}[]} ${2:name} - ${3:description}"],
+		"description": "An array parameter. Tab order follows reading order: element type, then name.\nhttps://jsdoc.app/tags-param\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@param is a Generic": {
+		"prefix": "@param.generic",
+		"body": ["@param {${1:Map}<${2:string}, ${3:number}>} ${4:name} - ${5:description}"],
+		"description": "A generic parameter.\nhttps://jsdoc.app/tags-param\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@param is any type": {
+		"prefix": "@param.any",
+		"body": ["@param {*} ${1:name} - ${2:description}"],
+		"description": "A parameter typed as `*`.\nhttps://jsdoc.app/tags-param\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@param is an Object": {
+		"prefix": "@param.object",
+		"body": ["@param {Object} ${1:name} - ${2:description}"],
+		"description": "A parameter typed as `Object`.\nhttps://jsdoc.app/tags-param\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@param is a string": {
+		"prefix": "@param.string",
+		"body": ["@param {string} ${1:name} - ${2:description}"],
+		"description": "A parameter typed as `string`.\nhttps://jsdoc.app/tags-param\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@param is a number": {
+		"prefix": "@param.number",
+		"body": ["@param {number} ${1:name} - ${2:description}"],
+		"description": "A parameter typed as `number`.\nhttps://jsdoc.app/tags-param\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@param is a boolean": {
+		"prefix": "@param.boolean",
+		"body": ["@param {boolean} ${1:name} - ${2:description}"],
+		"description": "A parameter typed as `boolean`.\nhttps://jsdoc.app/tags-param\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@param is a Function": {
+		"prefix": "@param.function",
+		"body": ["@param {Function} ${1:name} - ${2:description}"],
+		"description": "A parameter typed as `Function`.\nhttps://jsdoc.app/tags-param\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@param is an HTMLElement": {
+		"prefix": "@param.HTMLElement",
+		"body": ["@param {HTMLElement} ${1:name} - ${2:description}"],
+		"description": "A parameter typed as `HTMLElement`.\nhttps://jsdoc.app/tags-param\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@param is a Node": {
+		"prefix": "@param.Node",
+		"body": ["@param {Node} ${1:name} - ${2:description}"],
+		"description": "A parameter typed as `Node`.\nhttps://jsdoc.app/tags-param\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@param is a NodeList": {
+		"prefix": "@param.NodeList",
+		"body": ["@param {NodeList} ${1:name} - ${2:description}"],
+		"description": "A parameter typed as `NodeList`.\nhttps://jsdoc.app/tags-param\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@param is a RegExp": {
+		"prefix": "@param.RegExp",
+		"body": ["@param {RegExp} ${1:name} - ${2:description}"],
+		"description": "A parameter typed as `RegExp`.\nhttps://jsdoc.app/tags-param\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@returns": {
+		"prefix": ["@returns", "@return"],
+		"body": ["@returns {${1:TYPE}} ${2:description}"],
+		"description": "Document the return value. JSDoc lists `@return` as a synonym; this inserts the primary form.\nhttps://jsdoc.app/tags-returns\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@returns a Promise": {
+		"prefix": "@returns.promise",
+		"body": ["@returns {Promise<${1:TYPE}>} ${2:description}"],
+		"description": "A function returning a Promise.\nhttps://jsdoc.app/tags-returns\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@throws": {
+		"prefix": ["@throws", "@exception"],
+		"body": ["@throws {${1:Error}} ${2:description}"],
+		"description": "Describe an error a function may throw. JSDoc lists `@exception` as a synonym.\nhttps://jsdoc.app/tags-throws\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@yields": {
+		"prefix": ["@yields", "@yield"],
+		"body": ["@yields {${1:TYPE}} ${2:description}"],
+		"description": "Document what a generator yields.\nhttps://jsdoc.app/tags-yields\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@async": {
+		"prefix": "@async",
+		"body": ["@async"],
+		"description": "Mark a function as asynchronous.\nhttps://jsdoc.app/tags-async\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@this": {
+		"prefix": "@this",
+		"body": ["@this {${1:TYPE}}"],
+		"description": "What `this` refers to inside a function.\nhttps://jsdoc.app/tags-this\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@requires": {
+		"prefix": "@requires",
+		"body": ["@requires ${1:moduleName}"],
+		"description": "A module this symbol requires.\nhttps://jsdoc.app/tags-requires\n",
+		"scope": "vue,javascript,javascriptreact"
+	}
+}

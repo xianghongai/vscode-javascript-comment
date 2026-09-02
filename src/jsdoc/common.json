@@ -1,0 +1,82 @@
+{
+	"Block comment": {
+		"prefix": "///",
+		"body": ["/**", " * ${0:description}", " */"],
+		"description": "An empty JSDoc block comment.\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@description": {
+		"prefix": ["@description", "@desc"],
+		"body": ["@description ${1:description}"],
+		"description": "Describe a symbol.\nJSDoc lists `@desc` as a synonym; this inserts the primary form.\nhttps://jsdoc.app/tags-description\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@example": {
+		"prefix": "@example",
+		"body": ["@example", " * ```${1:js}", " * ${2:code}", " * ```", " * $0"],
+		"description": "Provide an example of how to use a symbol.\nhttps://jsdoc.app/tags-example\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@deprecated": {
+		"prefix": "@deprecated",
+		"body": ["@deprecated ${1:since version X, use Y instead}"],
+		"description": "Mark a symbol as no longer supported.\nhttps://jsdoc.app/tags-deprecated\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@see": {
+		"prefix": "@see",
+		"body": ["@see ${1:{@link OtherSymbol\\}}"],
+		"description": "Refer to another symbol or resource. Accepts a namepath, an inline `{@link}` or free text.\nhttps://jsdoc.app/tags-see\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@link": {
+		"prefix": "@link",
+		"body": ["{@link ${1:namepath}${2:|${3:link text}}}"],
+		"description": "Inline tag: link to another symbol or a URL. Delete the second placeholder to use the target as the text.\nhttps://jsdoc.app/tags-inline-link\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@since": {
+		"prefix": "@since",
+		"body": ["@since ${1:1.0.0}"],
+		"description": "The version a symbol was introduced in.\nhttps://jsdoc.app/tags-since\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@version": {
+		"prefix": "@version",
+		"body": ["@version ${1:1.0.0}"],
+		"description": "The version of the documented symbol.\nhttps://jsdoc.app/tags-version\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@todo": {
+		"prefix": "@todo",
+		"body": ["@todo ${1:description}"],
+		"description": "Work still to be done.\nhttps://jsdoc.app/tags-todo\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@ignore": {
+		"prefix": "@ignore",
+		"body": ["@ignore"],
+		"description": "Omit the symbol from the generated documentation.\nhttps://jsdoc.app/tags-ignore\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@access": {
+		"prefix": "@access",
+		"body": ["@access ${1|public,protected,package,private|}"],
+		"description": "Access level of a symbol. `@public` / `@protected` / `@private` / `@package` are equivalent shorthands.\nhttps://jsdoc.app/tags-access\n",
+		"scope": "vue,javascript,javascriptreact"
+	},
+	"@license": {
+		"prefix": "@license",
+		"body": [
+			"/**",
+			" * @license",
+			" * Copyright ${1:YEAR} ${2:NAME} All Rights Reserved.",
+			" *",
+			" * Use of this source code is governed by an ${3:MIT}-style license that can be",
+			" * found in the LICENSE file in the root directory of this source tree.",
+			" */"
+		],
+		"description": "The license that applies to this code.\nhttps://jsdoc.app/tags-license\n",
+		"scope": "vue,javascript,javascriptreact"
+	}
+}
