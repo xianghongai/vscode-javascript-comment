@@ -2,6 +2,11 @@
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## 1.2.0 (2026-09-03)
+
+- Unify packaging and publishing scripts to `vsce:package` and `vsce:publish`
+- Update GitHub Actions CI workflow to use `pnpm run vsce:publish`
+
 ## 1.1.0 (2026/09/02)
 
 - 片段按语言分流：`.js` / `.jsx` / `.vue` 中提供 JSDoc（类型写在花括号里），`.ts` / `.tsx` 中提供 TSDoc（不写花括号，类型由 TypeScript 签名提供）。同一个前缀在两种文件里各自插入正确的形态

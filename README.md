@@ -18,7 +18,7 @@
   </a>
 </p>
 
-[中文文档](./README-CN.md)
+[中文文档](./README.zh-CN.md)
 
 Documentation comments triggered by `@`, so the tag names are one keystroke away instead of something to memorize.
 
